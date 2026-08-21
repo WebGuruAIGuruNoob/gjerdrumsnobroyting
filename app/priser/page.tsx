@@ -106,21 +106,21 @@ export default function PriserSide() {
         </h2>
         <ol className="mt-6 space-y-4">
           <li className="flex gap-4">
-            <span className="font-display text-2xl font-bold text-beacon-600">1</span>
+            <span className="font-display text-2xl font-bold text-beacon-700">1</span>
             <p className="max-w-prose text-ink">
               <strong>Send adressen din på SMS</strong> til 48 42 42 88 – eller ring, eller bruk
               skjemaet nedenfor.
             </p>
           </li>
           <li className="flex gap-4">
-            <span className="font-display text-2xl font-bold text-beacon-600">2</span>
+            <span className="font-display text-2xl font-bold text-beacon-700">2</span>
             <p className="max-w-prose text-ink">
               <strong>Vi vurderer arealet</strong> – ofte holder kartet, ellers tar vi en gratis
               befaring.
             </p>
           </li>
           <li className="flex gap-4">
-            <span className="font-display text-2xl font-bold text-beacon-600">3</span>
+            <span className="font-display text-2xl font-bold text-beacon-700">3</span>
             <p className="max-w-prose text-ink">
               <strong>Du får et konkret tilbud</strong> – som regel samme dag, alltid uforpliktende.
             </p>

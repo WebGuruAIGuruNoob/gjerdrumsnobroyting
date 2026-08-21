@@ -33,7 +33,6 @@ export async function generateMetadata({
     openGraph: {
       title: tjeneste.metaTittel,
       description: tjeneste.metaBeskrivelse,
-      images: [{ url: tjeneste.bilde }],
     },
   }
 }
@@ -78,7 +77,7 @@ export default async function TjenesteSide({ params }: { params: Promise<{ slug:
               <ul className="mt-4 space-y-2">
                 {seksjon.punkter.map((punkt) => (
                   <li key={punkt} className="flex gap-3">
-                    <span aria-hidden="true" className="mt-0.5 font-display text-lg font-bold text-beacon-600">✓</span>
+                    <span aria-hidden="true" className="mt-0.5 font-display text-lg font-bold text-beacon-700">✓</span>
                     <span className="text-ink">{punkt}</span>
                   </li>
                 ))}

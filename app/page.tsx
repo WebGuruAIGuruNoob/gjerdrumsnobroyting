@@ -146,7 +146,7 @@ export default function Forside() {
               satt ut ved sesongstart og skånsom brøyting som skåner plen og belegningsstein. Legg til
               strøing hvis du bor i bakke.
             </p>
-            <Link href="/tjenester/snobroyting" className="mt-4 inline-block font-display text-sm font-bold uppercase tracking-wider text-beacon-600 hover:text-beacon-500">
+            <Link href="/tjenester/snobroyting" className="mt-4 inline-block font-display text-sm font-bold uppercase tracking-wider text-marine-600 hover:text-marine-500">
               Snøbrøyting for private →
             </Link>
           </div>
@@ -159,7 +159,7 @@ export default function Forside() {
               strøing av gangveier og trapper, prioritert adkomst for renovasjon – og dokumentert
               sikring som styret kan vise til.
             </p>
-            <Link href="/tjenester/vintervedlikehold-borettslag" className="mt-4 inline-block font-display text-sm font-bold uppercase tracking-wider text-beacon-600 hover:text-beacon-500">
+            <Link href="/tjenester/vintervedlikehold-borettslag" className="mt-4 inline-block font-display text-sm font-bold uppercase tracking-wider text-marine-600 hover:text-marine-500">
               Vinterdrift for borettslag →
             </Link>
           </div>
@@ -172,7 +172,7 @@ export default function Forside() {
               responstider tilpasset driften din. Én avtale kan dekke flere eiendommer – med samlet
               fakturering.
             </p>
-            <Link href="/tjenester/vintervedlikehold-bedrift" className="mt-4 inline-block font-display text-sm font-bold uppercase tracking-wider text-beacon-600 hover:text-beacon-500">
+            <Link href="/tjenester/vintervedlikehold-bedrift" className="mt-4 inline-block font-display text-sm font-bold uppercase tracking-wider text-marine-600 hover:text-marine-500">
               Vinterdrift for bedrifter →
             </Link>
           </div>

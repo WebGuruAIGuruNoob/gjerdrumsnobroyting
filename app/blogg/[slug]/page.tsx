@@ -68,7 +68,7 @@ export default async function BloggInnleggSide({
       />
       <article className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
         <header>
-          <span className="font-display text-sm font-bold uppercase tracking-widest text-beacon-600">
+          <span className="font-display text-sm font-bold uppercase tracking-widest text-beacon-800">
             {innlegg.kategori}
           </span>
           <h1 className="mt-2 font-display text-4xl font-bold leading-tight text-marine-800 sm:text-5xl">

@@ -35,7 +35,6 @@ export async function generateMetadata({
     openGraph: {
       title: omrade.metaTittel,
       description: omrade.metaBeskrivelse,
-      images: [{ url: '/bilder/hero-broyting.jpg' }],
     },
   }
 }

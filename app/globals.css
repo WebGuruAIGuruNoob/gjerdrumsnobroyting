@@ -29,6 +29,7 @@
   --color-beacon-500: #f08c1b;
   --color-beacon-600: #e07c00;
   --color-beacon-700: #c96a00;
+  --color-beacon-800: #9a5000;
 
   --font-display: var(--font-barlow), "Arial Narrow", sans-serif;
   --font-sans: var(--font-source), "Segoe UI", system-ui, sans-serif;
@@ -90,4 +91,13 @@ body {
 }
 .prose-blogg blockquote {
   @apply mt-4 border-l-4 border-beacon-500 bg-frost py-2 pl-4 italic;
+}
+.prose-blogg table {
+  @apply mt-6 w-full border-collapse overflow-hidden rounded-lg text-sm;
+}
+.prose-blogg th {
+  @apply border-b-2 border-ice bg-frost px-4 py-2.5 text-left font-display font-semibold uppercase tracking-wide text-marine-800;
+}
+.prose-blogg td {
+  @apply border-b border-ice px-4 py-2.5 align-top;
 }

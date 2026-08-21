@@ -35,7 +35,7 @@ export function ProcessSteps() {
         <ol className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
           {steg.map((s, i) => (
             <li key={s.tittel} className="rounded-xl border border-ice bg-white p-5 shadow-sm">
-              <span className="font-display text-3xl font-bold text-beacon-600">{i + 1}</span>
+              <span className="font-display text-3xl font-bold text-beacon-700">{i + 1}</span>
               <h3 className="mt-2 font-display text-lg font-semibold uppercase leading-snug tracking-wide text-ink">
                 {s.tittel}
               </h3>

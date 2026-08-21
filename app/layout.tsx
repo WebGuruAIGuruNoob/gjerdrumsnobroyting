@@ -28,9 +28,6 @@ export const metadata: Metadata = {
   },
   description:
     'Profesjonell snøbrøyting, strøing og vintervedlikehold for privat, borettslag og bedrift i Gjerdrum og på Romerike. Døgnbemanning i sesong – ring 48 42 42 88 for uforpliktende tilbud.',
-  alternates: {
-    canonical: '/',
-  },
   openGraph: {
     type: 'website',
     locale: 'nb_NO',

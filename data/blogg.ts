@@ -34,6 +34,26 @@ export const blogginnlegg: Blogginnlegg[] = [
     bildeAlt: 'Salting og strøing av vei på vinterføre',
   },
   {
+    slug: 'hvem-har-ansvar-for-broyting',
+    tittel: 'Hvem har ansvar for brøyting? Kommune, huseier, borettslag og veilag',
+    beskrivelse:
+      'Kommunen tar veien, du tar innkjørselen – og styret tar fellesarealene. Slik fordeles brøyte- og strøansvaret, og dette risikerer du hvis det glipper.',
+    dato: '2026-08-21',
+    kategori: 'Ansvar og regelverk',
+    bilde: '/bilder/blogg-broyteavtale-inline.png',
+    bildeAlt: 'Brøytet boliggate med tydelig ansvarsdeling mellom vei og innkjørsel',
+  },
+  {
+    slug: 'klargjor-eiendommen-for-vinteren',
+    tittel: 'Klargjør eiendommen for vinteren: sjekklisten før første snøfall',
+    beskrivelse:
+      'Syv ting du bør gjøre i september–oktober: sikre brøyteavtale, rydde arealer, merke kanter, planlegge snølagring og mer. Sjekklisten fra fagfolkene.',
+    dato: '2026-08-21',
+    kategori: 'Tips og råd',
+    bilde: '/bilder/blogg-veisalting-inline.png',
+    bildeAlt: 'Gårdsplass klargjort for vintersesongen før første snøfall',
+  },
+  {
     slug: 'hva-koster-snobroyting',
     tittel: 'Hva koster snøbrøyting? Slik settes prisen på brøyteavtaler',
     beskrivelse:

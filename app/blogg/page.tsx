@@ -42,7 +42,7 @@ export default function BloggSide() {
                 />
               </div>
               <div className="flex flex-1 flex-col p-5">
-                <span className="font-display text-xs font-bold uppercase tracking-widest text-beacon-600">
+                <span className="font-display text-xs font-bold uppercase tracking-widest text-beacon-800">
                   {innlegg.kategori}
                 </span>
                 <h2 className="mt-2 font-display text-xl font-semibold leading-snug text-marine-800">

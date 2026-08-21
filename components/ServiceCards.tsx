@@ -27,7 +27,7 @@ export function ServiceCards({ utenom }: { utenom?: string }) {
               {t.navn}
             </h3>
             <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">{t.kortBeskrivelse}</p>
-            <span className="mt-4 font-display text-sm font-bold uppercase tracking-wider text-beacon-600 group-hover:text-beacon-500">
+            <span className="mt-4 font-display text-sm font-bold uppercase tracking-wider text-marine-600 group-hover:text-marine-500">
               Les mer →
             </span>
           </div>
