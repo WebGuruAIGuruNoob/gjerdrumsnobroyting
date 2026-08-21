@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import { blogginnlegg, getBlogginnlegg } from '@/data/blogg'
+import { innleggModuler } from '@/content/blogg'
 import { ogFor } from '@/lib/seo'
 import { Breadcrumbs } from '@/components/Breadcrumbs'
 import { CTASection } from '@/components/CTASection'
@@ -46,7 +47,9 @@ export default async function BloggInnleggSide({
   const innlegg = getBlogginnlegg(slug)
   if (!innlegg) notFound()
 
-  const { default: Innhold } = await import(`@/content/blogg/${slug}.mdx`)
+  const lastInnlegg = innleggModuler[slug]
+  if (!lastInnlegg) notFound()
+  const { default: Innhold } = await lastInnlegg()
 
   const jsonLd = {
     '@context': 'https://schema.org',
