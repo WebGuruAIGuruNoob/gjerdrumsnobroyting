@@ -73,25 +73,33 @@ export function CoverageMap({ fra = 'snow' }: { fra?: 'snow' | 'white' | 'frost'
             >
               <LogoMark className="h-9 w-9 drop-shadow-lg md:h-11 md:w-11" />
             </div>
-            {/* Områdepunkter */}
+            {/* Områdepunkter: klikkbare etiketter fra md-bredde; på mobil er
+                kartet dekorativt (chips-listen over gir samme lenker med
+                fullverdige berøringsmål – tette kartetiketter blir for små). */}
             {omrader.map((o) => {
               const pos = posisjoner[o.slug]
               if (!pos) return null
               return (
-                <Link
-                  key={o.slug}
-                  href={`/omrader/${o.slug}`}
-                  title={`Snøbrøyting ${o.sted} – utrykning ${o.utrykningstid}`}
-                  className="group absolute z-10 -translate-x-1/2 -translate-y-1/2"
-                  style={{ left: `${pos.x}%`, top: `${pos.y}%` }}
-                >
-                  <span className="flex flex-col items-center">
-                    <span className="h-2.5 w-2.5 rounded-full bg-beacon-500 ring-2 ring-night-900 transition group-hover:scale-150 md:h-3 md:w-3" />
-                    <span className="mt-1 whitespace-nowrap rounded bg-night-950/70 px-1.5 py-0.5 text-[0.6rem] font-semibold text-ice transition group-hover:bg-beacon-500 group-hover:text-night-950 md:text-xs">
-                      {o.sted}
+                <span key={o.slug}>
+                  <span
+                    aria-hidden="true"
+                    className="absolute z-10 h-2.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-beacon-500 ring-2 ring-night-900 md:hidden"
+                    style={{ left: `${pos.x}%`, top: `${pos.y}%` }}
+                  />
+                  <Link
+                    href={`/omrader/${o.slug}`}
+                    title={`Snøbrøyting ${o.sted} – utrykning ${o.utrykningstid}`}
+                    className="group absolute z-10 hidden -translate-x-1/2 -translate-y-1/2 p-1 md:block"
+                    style={{ left: `${pos.x}%`, top: `${pos.y}%` }}
+                  >
+                    <span className="flex flex-col items-center">
+                      <span className="h-3 w-3 rounded-full bg-beacon-500 ring-2 ring-night-900 transition group-hover:scale-150" />
+                      <span className="mt-1 whitespace-nowrap rounded bg-night-950/70 px-1.5 py-0.5 text-xs font-semibold text-ice transition group-hover:bg-beacon-500 group-hover:text-night-950">
+                        {o.sted}
+                      </span>
                     </span>
-                  </span>
-                </Link>
+                  </Link>
+                </span>
               )
             })}
           </div>
