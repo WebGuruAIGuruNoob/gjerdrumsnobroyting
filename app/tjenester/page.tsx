@@ -30,7 +30,7 @@ export default function TjenesterSide() {
       </section>
       <SocialProof />
       <QuoteForm />
-      <CTASection />
+      <CTASection telefonFokus fra="white" />
     </>
   )
 }

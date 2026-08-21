@@ -3,14 +3,16 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { tjenester, getTjeneste } from '@/data/tjenester'
 import { site } from '@/lib/site'
+import { ogFor } from '@/lib/seo'
 import { serviceSchema } from '@/lib/schema'
 import { Hero } from '@/components/Hero'
 import { SocialProof } from '@/components/SocialProof'
-import { Breadcrumbs } from '@/components/Breadcrumbs'
 import { FaqSection } from '@/components/Faq'
 import { QuoteForm } from '@/components/QuoteForm'
 import { CTASection } from '@/components/CTASection'
 import { AreaGrid } from '@/components/AreaGrid'
+import { StikkeListe } from '@/components/Bullets'
+import { tjenesteIkoner } from '@/components/Icons'
 
 export const dynamicParams = false
 
@@ -27,13 +29,14 @@ export async function generateMetadata({
   const tjeneste = getTjeneste(slug)
   if (!tjeneste) return {}
   return {
-    title: tjeneste.metaTittel,
+    title: { absolute: `${tjeneste.metaTittel} | Gjerdrum Snøbrøyting`.slice(0, 100) },
     description: tjeneste.metaBeskrivelse,
     alternates: { canonical: `/tjenester/${tjeneste.slug}` },
-    openGraph: {
-      title: tjeneste.metaTittel,
-      description: tjeneste.metaBeskrivelse,
-    },
+    openGraph: ogFor({
+      tittel: tjeneste.metaTittel,
+      beskrivelse: tjeneste.metaBeskrivelse,
+      path: `/tjenester/${tjeneste.slug}`,
+    }),
   }
 }
 
@@ -53,19 +56,17 @@ export default async function TjenesteSide({ params }: { params: Promise<{ slug:
         undertittel={tjeneste.ingress}
         bilde={tjeneste.bilde}
         bildeAlt={tjeneste.bildeAlt}
-      />
-      <SocialProof />
-      <Breadcrumbs
-        items={[
+        brodsmuler={[
           { navn: 'Tjenester', url: '/tjenester' },
           { navn: tjeneste.navn, url: `/tjenester/${tjeneste.slug}` },
         ]}
       />
+      <SocialProof />
 
       <article className="mx-auto max-w-4xl px-4 py-10 sm:px-6">
         {tjeneste.seksjoner.map((seksjon) => (
           <section key={seksjon.tittel} className="mt-10 first:mt-0">
-            <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-marine-800 sm:text-3xl">
+            <h2 className="font-display text-2xl font-bold tracking-wide text-marine-800 sm:text-3xl">
               {seksjon.tittel}
             </h2>
             {seksjon.avsnitt.map((avsnitt) => (
@@ -74,14 +75,9 @@ export default async function TjenesteSide({ params }: { params: Promise<{ slug:
               </p>
             ))}
             {seksjon.punkter && (
-              <ul className="mt-4 space-y-2">
-                {seksjon.punkter.map((punkt) => (
-                  <li key={punkt} className="flex gap-3">
-                    <span aria-hidden="true" className="mt-0.5 font-display text-lg font-bold text-beacon-700">✓</span>
-                    <span className="text-ink">{punkt}</span>
-                  </li>
-                ))}
-              </ul>
+              <div className="mt-4">
+                <StikkeListe punkter={seksjon.punkter} />
+              </div>
             )}
           </section>
         ))}
@@ -90,17 +86,21 @@ export default async function TjenesteSide({ params }: { params: Promise<{ slug:
           <h2 className="font-display text-xl font-bold uppercase tracking-wide text-marine-800">
             Relaterte tjenester
           </h2>
-          <ul className="mt-3 space-y-2">
-            {relaterte.map((r) => (
-              <li key={r.slug}>
-                <Link
-                  href={`/tjenester/${r.slug}`}
-                  className="font-semibold text-marine-600 hover:underline"
-                >
-                  {r.navn} →
-                </Link>
-              </li>
-            ))}
+          <ul className="mt-4 grid gap-3 sm:grid-cols-3">
+            {relaterte.map((r) => {
+              const Ikon = tjenesteIkoner[r.slug]
+              return (
+                <li key={r.slug}>
+                  <Link
+                    href={`/tjenester/${r.slug}`}
+                    className="flex h-full items-center gap-3 rounded-lg border border-ice bg-white p-3 font-semibold text-marine-700 transition hover:border-marine-500"
+                  >
+                    {Ikon && <Ikon className="h-6 w-6 shrink-0" />}
+                    <span className="text-sm">{r.navn}</span>
+                  </Link>
+                </li>
+              )
+            })}
           </ul>
         </aside>
       </article>
@@ -108,13 +108,14 @@ export default async function TjenesteSide({ params }: { params: Promise<{ slug:
       <FaqSection faq={tjeneste.faq} tittel={`Spørsmål og svar om ${tjeneste.navn.toLowerCase()}`} />
       <AreaGrid tittel={`${tjeneste.navn} i hele området`} />
       <QuoteForm />
-      <CTASection />
+      <CTASection telefonFokus fra="white" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             serviceSchema({
               navn: tjeneste.navn,
+              serviceType: tjeneste.navn,
               beskrivelse: tjeneste.metaBeskrivelse,
               url: `${site.url}/tjenester/${tjeneste.slug}`,
             })

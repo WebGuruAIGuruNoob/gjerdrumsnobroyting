@@ -1,5 +1,6 @@
 import { site } from './site'
 import { omrader } from '@/data/omrader'
+import { tjenester } from '@/data/tjenester'
 
 /** LocalBusiness-schema – ligger i layout og gjelder hele nettstedet. */
 export function localBusinessSchema() {
@@ -15,6 +16,7 @@ export function localBusinessSchema() {
     foundingDate: String(site.founded),
     image: `${site.url}/bilder/traktor-skjaer-fres.jpg`,
     logo: `${site.url}/icon.svg`,
+    priceRange: '$$',
     address: {
       '@type': 'PostalAddress',
       streetAddress: site.address.street,
@@ -22,10 +24,27 @@ export function localBusinessSchema() {
       addressLocality: site.address.city,
       addressCountry: 'NO',
     },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 60.0578,
+      longitude: 11.0347,
+    },
     areaServed: omrader.map((o) => ({
       '@type': 'Place',
       name: `${o.sted}, ${o.kommune}`,
     })),
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Vintertjenester',
+      itemListElement: tjenester.map((t) => ({
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: t.navn,
+          url: `${site.url}/tjenester/${t.slug}`,
+        },
+      })),
+    },
     description:
       'Profesjonell snøbrøyting, strøing, bortkjøring av snø, takrydding og vintervedlikehold for privatpersoner, borettslag og bedrifter i Gjerdrum og på Romerike.',
     openingHoursSpecification: {
@@ -38,14 +57,29 @@ export function localBusinessSchema() {
   }
 }
 
+/** WebSite-node – navnesignal for søkemotorer og AI-svarflater. */
+export function webSiteSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: site.name,
+    url: site.url,
+    inLanguage: 'nb-NO',
+    publisher: { '@id': `${site.url}/#firma` },
+  }
+}
+
 /** Service-schema for tjeneste- og områdesider. */
 export function serviceSchema({
   navn,
+  serviceType,
   beskrivelse,
   url,
   omrade,
 }: {
   navn: string
+  /** Ren tjenestetype uten stedsnavn – geografien bæres av areaServed */
+  serviceType: string
   beskrivelse: string
   url: string
   omrade?: string
@@ -56,7 +90,7 @@ export function serviceSchema({
     name: navn,
     description: beskrivelse,
     url,
-    serviceType: navn,
+    serviceType,
     provider: { '@id': `${site.url}/#firma` },
     ...(omrade ? { areaServed: { '@type': 'Place', name: omrade } } : {}),
   }

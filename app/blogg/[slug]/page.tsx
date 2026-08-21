@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import { blogginnlegg, getBlogginnlegg } from '@/data/blogg'
+import { ogFor } from '@/lib/seo'
 import { Breadcrumbs } from '@/components/Breadcrumbs'
 import { CTASection } from '@/components/CTASection'
 import { QuoteForm } from '@/components/QuoteForm'
@@ -22,16 +23,17 @@ export async function generateMetadata({
   const innlegg = getBlogginnlegg(slug)
   if (!innlegg) return {}
   return {
-    title: innlegg.tittel,
+    title: { absolute: `${innlegg.tittel} | Gjerdrum Snøbrøyting`.slice(0, 110) },
     description: innlegg.beskrivelse,
     alternates: { canonical: `/blogg/${innlegg.slug}` },
-    openGraph: {
+    openGraph: ogFor({
+      tittel: innlegg.tittel,
+      beskrivelse: innlegg.beskrivelse,
+      path: `/blogg/${innlegg.slug}`,
       type: 'article',
-      title: innlegg.tittel,
-      description: innlegg.beskrivelse,
-      images: [{ url: innlegg.bilde }],
       publishedTime: innlegg.dato,
-    },
+      images: [{ url: innlegg.bilde }],
+    }),
   }
 }
 
@@ -52,6 +54,7 @@ export default async function BloggInnleggSide({
     headline: innlegg.tittel,
     description: innlegg.beskrivelse,
     datePublished: innlegg.dato,
+    dateModified: innlegg.dato,
     image: `${site.url}${innlegg.bilde}`,
     author: { '@type': 'Organization', name: site.name, url: site.url },
     publisher: { '@id': `${site.url}/#firma` },
@@ -98,7 +101,7 @@ export default async function BloggInnleggSide({
         </div>
       </article>
       <QuoteForm />
-      <CTASection />
+      <CTASection telefonFokus fra="white" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
     </>
   )

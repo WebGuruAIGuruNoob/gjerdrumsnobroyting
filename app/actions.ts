@@ -18,6 +18,7 @@ export async function sendTilbudsforesporsel(
 
   const navn = String(formData.get('navn') ?? '').trim()
   const telefon = String(formData.get('telefon') ?? '').trim()
+  const adresse = String(formData.get('adresse') ?? '').trim()
   const epost = String(formData.get('epost') ?? '').trim()
   const kundetype = String(formData.get('kundetype') ?? '').trim()
   const omrade = String(formData.get('omrade') ?? '').trim()
@@ -48,6 +49,7 @@ export async function sendTilbudsforesporsel(
       text: [
         `Navn: ${navn}`,
         `Telefon: ${telefon}`,
+        `Adresse: ${adresse || '–'}`,
         `E-post: ${epost || '–'}`,
         `Kundetype: ${kundetype || '–'}`,
         `Område: ${omrade || '–'}`,

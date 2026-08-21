@@ -36,9 +36,9 @@ export function Footer() {
         </div>
 
         <nav aria-label="Tjenester">
-          <h2 className="font-display text-base font-bold uppercase tracking-wider text-white">
+          <p className="font-display text-base font-bold uppercase tracking-wider text-white">
             Tjenester
-          </h2>
+          </p>
           <ul className="mt-4 space-y-2 text-sm">
             {tjenester.map((t) => (
               <li key={t.slug}>
@@ -56,9 +56,9 @@ export function Footer() {
         </nav>
 
         <nav aria-label="Områder" className="lg:col-span-2">
-          <h2 className="font-display text-base font-bold uppercase tracking-wider text-white">
+          <p className="font-display text-base font-bold uppercase tracking-wider text-white">
             Snøbrøyting i ditt område
-          </h2>
+          </p>
           <ul className="mt-4 grid grid-cols-2 gap-x-6 gap-y-2 text-sm">
             {omrader.map((o) => (
               <li key={o.slug}>

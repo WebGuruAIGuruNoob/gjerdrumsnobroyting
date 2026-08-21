@@ -6,16 +6,29 @@ import { SocialProof } from '@/components/SocialProof'
 import { ServiceCards } from '@/components/ServiceCards'
 import { ProcessSteps } from '@/components/ProcessSteps'
 import { Gallery } from '@/components/Gallery'
-import { AreaGrid } from '@/components/AreaGrid'
+import { CoverageMap } from '@/components/CoverageMap'
+import { AreaChips } from '@/components/AreaGrid'
 import { FaqSection } from '@/components/Faq'
 import { QuoteForm } from '@/components/QuoteForm'
 import { CTASection } from '@/components/CTASection'
+import { Testimonials } from '@/components/Testimonials'
+import { SectionHeading } from '@/components/SectionHeading'
+import { SectionDivider } from '@/components/SectionDivider'
+import { StikkeListe } from '@/components/Bullets'
+import { IconPlog, IconBlokk, IconButikk } from '@/components/Icons'
+import { ogFor } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'Snøbrøyting i Gjerdrum og på Romerike – Fast avtale & døgnberedskap',
+  title: { absolute: 'Snøbrøyting i Gjerdrum og på Romerike – Fast avtale & døgnberedskap' },
   description:
     'Snøbrøyting, strøing og vintervedlikehold i Gjerdrum, på Kløfta, Frogner og Skedsmokorset. Automatisk utrykning, lokal base og døgnbemanning. Ring 48 42 42 88 – uforpliktende tilbud.',
   alternates: { canonical: '/' },
+  openGraph: ogFor({
+    tittel: 'Snøbrøyting i Gjerdrum og på Romerike – Fast avtale & døgnberedskap',
+    beskrivelse:
+      'Automatisk utrykning, lokal base og døgnbemanning i sesong. Ring 48 42 42 88 for uforpliktende tilbud.',
+    path: '/',
+  }),
 }
 
 const forsideFaq = [
@@ -45,11 +58,38 @@ const forsideFaq = [
   },
   {
     sp: 'Tilbyr dere strøing og salting også?',
-    svar: 'Ja, de fleste velger kombinert avtale: vi brøyter når det snør og strør når det er glatt – helt automatisk. Vi utfører også bortkjøring av snø, takrydding og vårfeiing.',
+    svar: 'Ja, de fleste velger kombinert avtale: vi brøyter når det snør og strør når det er glatt – helt automatisk. Vi utfører også bortkjøring av snø, takrydding og vårfeiing. Enten du kaller det snøbrøyting eller snøbrøying: alt vintervedlikeholdet er samlet hos én leverandør.',
   },
   {
     sp: 'Hvordan kommer jeg i gang?',
     svar: 'Ring 48 42 42 88 eller send SMS med adressen din, så gir vi deg et uforpliktende tilbud. Tegner du avtale før sesongen, rekker vi befaring og utsetting av brøytestikker før første snøfall.',
+  },
+]
+
+const segmenter = [
+  {
+    Ikon: IconPlog,
+    tittel: 'Privat',
+    tekst:
+      'Fast brøyteavtale for innkjørsel og gårdsplass: ryddet før du skal på jobb, brøytestikker satt ut ved sesongstart og skånsom brøyting som skåner plen og belegningsstein. Legg til strøing hvis du bor i bakke.',
+    href: '/tjenester/snobroyting',
+    lenke: 'Snøbrøyting for private',
+  },
+  {
+    Ikon: IconBlokk,
+    tittel: 'Borettslag & sameie',
+    tekst:
+      'Komplett vinterdrift av fellesarealer med fast sesongpris: brøyting, håndrydding og strøing av gangveier og trapper, prioritert adkomst for renovasjon – og dokumentert sikring som styret kan vise til.',
+    href: '/tjenester/vintervedlikehold-borettslag',
+    lenke: 'Vinterdrift for borettslag',
+  },
+  {
+    Ikon: IconButikk,
+    tittel: 'Bedrift & næring',
+    tekst:
+      'Kundeparkering og varemottak klare før åpningstid, HMS-dokumentert iskontroll og responstider tilpasset driften din. Én avtale kan dekke flere eiendommer – med samlet fakturering.',
+    href: '/tjenester/vintervedlikehold-bedrift',
+    lenke: 'Vinterdrift for bedrifter',
   },
 ]
 
@@ -64,60 +104,51 @@ export default function Forside() {
 
       {/* Tjenester */}
       <section className="mx-auto max-w-7xl px-4 py-14 sm:px-6">
-        <h2 className="font-display text-3xl font-bold uppercase tracking-wide text-marine-800">
-          Alt du trenger til vinteren – i én avtale
-        </h2>
-        <p className="mt-2 max-w-3xl text-muted">
-          Fra snøbrøyting og strøing til bortkjøring, takrydding og vårfeiing: vi tar totalansvaret
-          for uteområdene dine fra første snøfall til grusen er feid opp om våren.
-        </p>
-        <div className="mt-8">
+        <SectionHeading
+          eyebrow="Tjenestene våre"
+          tittel="Alt du trenger til vinteren – i én avtale"
+          ingress="Fra snøbrøyting og strøing til bortkjøring, takrydding og vårfeiing: vi tar totalansvaret for uteområdene dine fra første snøfall til grusen er feid opp om våren."
+        />
+        <div className="mt-10">
           <ServiceCards />
         </div>
       </section>
 
       {/* Hvorfor oss */}
       <section className="bg-night-900">
-        <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2">
+        <SectionDivider fra="snow" />
+        <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 pb-16 pt-8 sm:px-6 lg:grid-cols-2">
           <div>
-            <h2 className="font-display text-3xl font-bold uppercase tracking-wide text-white">
-              Derfor velger naboene dine oss
-            </h2>
-            <ul className="mt-6 space-y-4 text-ice">
-              <li className="flex gap-3">
-                <span aria-hidden="true" className="mt-1 font-display text-xl font-bold text-beacon-400">✓</span>
-                <p>
-                  <strong className="text-white">Lokal base i Gjerdrum.</strong> Vi holder til på
-                  Askheim – ikke i Oslo. Det betyr utrykningstid på minutter og sjåfører som kjenner
-                  hver bakke og hvert gårdsrom.
-                </p>
-              </li>
-              <li className="flex gap-3">
-                <span aria-hidden="true" className="mt-1 font-display text-xl font-bold text-beacon-400">✓</span>
-                <p>
-                  <strong className="text-white">Automatisk utrykning.</strong> Du ringer aldri når
-                  det snør. Vi overvåker værradaren og rykker ut når snøfallet passerer avtalt høyde.
-                </p>
-              </li>
-              <li className="flex gap-3">
-                <span aria-hidden="true" className="mt-1 font-display text-xl font-bold text-beacon-400">✓</span>
-                <p>
-                  <strong className="text-white">Erfaring siden 90-tallet.</strong> Firmaet ble
-                  etablert i 2005, men vi har brøytet i Gjerdrum mye lenger. Vi vet hva romeriksvintre
-                  krever av både maskiner og folk.
-                </p>
-              </li>
-              <li className="flex gap-3">
-                <span aria-hidden="true" className="mt-1 font-display text-xl font-bold text-beacon-400">✓</span>
-                <p>
-                  <strong className="text-white">Én avtale – helt ansvar.</strong> Brøyting, strøing,
-                  bortkjøring, takrydding og vårfeiing fra samme leverandør. Ett nummer å ringe, null
-                  ansvarsfraskrivelse.
-                </p>
-              </li>
-            </ul>
+            <SectionHeading dark eyebrow="Hvorfor oss" tittel="Derfor velger naboene dine oss" />
+            <div className="mt-6">
+              <StikkeListe
+                dark
+                punkter={[
+                  <p key="1">
+                    <strong className="text-white">Lokal base i Gjerdrum.</strong> Vi holder til på
+                    Askheim – ikke i Oslo. Det betyr utrykningstid på minutter og sjåfører som
+                    kjenner hver bakke og hvert gårdsrom.
+                  </p>,
+                  <p key="2">
+                    <strong className="text-white">Automatisk utrykning.</strong> Du ringer aldri
+                    når det snør. Vi overvåker værradaren og rykker ut når snøfallet passerer avtalt
+                    høyde.
+                  </p>,
+                  <p key="3">
+                    <strong className="text-white">Erfaring siden 90-tallet.</strong> Firmaet ble
+                    etablert i 2005, men vi har brøytet i Gjerdrum mye lenger. Vi vet hva
+                    romeriksvintre krever av både maskiner og folk.
+                  </p>,
+                  <p key="4">
+                    <strong className="text-white">Én avtale – helt ansvar.</strong> Brøyting,
+                    strøing, bortkjøring, takrydding og vårfeiing fra samme leverandør. Ett nummer å
+                    ringe, null ansvarsfraskrivelse.
+                  </p>,
+                ]}
+              />
+            </div>
           </div>
-          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+          <div className="foto relative aspect-[4/3] overflow-hidden rounded-2xl">
             <Image
               src="/bilder/traktor-skjaer-fres.jpg"
               alt="Traktor med skjær og fres fra maskinparken til Gjerdrum Snøbrøyting"
@@ -131,59 +162,36 @@ export default function Forside() {
 
       <ProcessSteps />
 
-      {/* Segmenter */}
-      <section className="mx-auto max-w-7xl px-4 py-14 sm:px-6">
-        <h2 className="font-display text-3xl font-bold uppercase tracking-wide text-marine-800">
-          Skreddersydd for din situasjon
-        </h2>
-        <div className="mt-8 grid gap-5 lg:grid-cols-3">
-          <div className="rounded-xl border border-ice bg-white p-6 shadow-sm">
-            <h3 className="font-display text-xl font-semibold uppercase tracking-wide text-marine-700">
-              Privat
-            </h3>
-            <p className="mt-3 text-sm leading-relaxed text-muted">
-              Fast brøyteavtale for innkjørsel og gårdsplass: ryddet før du skal på jobb, brøytestikker
-              satt ut ved sesongstart og skånsom brøyting som skåner plen og belegningsstein. Legg til
-              strøing hvis du bor i bakke.
-            </p>
-            <Link href="/tjenester/snobroyting" className="mt-4 inline-block font-display text-sm font-bold uppercase tracking-wider text-marine-600 hover:text-marine-500">
-              Snøbrøyting for private →
-            </Link>
-          </div>
-          <div className="rounded-xl border border-ice bg-white p-6 shadow-sm">
-            <h3 className="font-display text-xl font-semibold uppercase tracking-wide text-marine-700">
-              Borettslag &amp; sameie
-            </h3>
-            <p className="mt-3 text-sm leading-relaxed text-muted">
-              Komplett vinterdrift av fellesarealer med fast sesongpris: brøyting, håndrydding og
-              strøing av gangveier og trapper, prioritert adkomst for renovasjon – og dokumentert
-              sikring som styret kan vise til.
-            </p>
-            <Link href="/tjenester/vintervedlikehold-borettslag" className="mt-4 inline-block font-display text-sm font-bold uppercase tracking-wider text-marine-600 hover:text-marine-500">
-              Vinterdrift for borettslag →
-            </Link>
-          </div>
-          <div className="rounded-xl border border-ice bg-white p-6 shadow-sm">
-            <h3 className="font-display text-xl font-semibold uppercase tracking-wide text-marine-700">
-              Bedrift &amp; næring
-            </h3>
-            <p className="mt-3 text-sm leading-relaxed text-muted">
-              Kundeparkering og varemottak klare før åpningstid, HMS-dokumentert iskontroll og
-              responstider tilpasset driften din. Én avtale kan dekke flere eiendommer – med samlet
-              fakturering.
-            </p>
-            <Link href="/tjenester/vintervedlikehold-bedrift" className="mt-4 inline-block font-display text-sm font-bold uppercase tracking-wider text-marine-600 hover:text-marine-500">
-              Vinterdrift for bedrifter →
-            </Link>
+      {/* Segmenter – flat ikon+linje-layout */}
+      <section className="bg-white">
+        <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6">
+          <SectionHeading eyebrow="For deg" tittel="Skreddersydd for din situasjon" />
+          <div className="mt-10 grid gap-10 md:grid-cols-3 md:gap-0 md:divide-x md:divide-ice">
+            {segmenter.map(({ Ikon, tittel, tekst, href, lenke }) => (
+              <div key={tittel} className="md:px-8 md:first:pl-0 md:last:pr-0">
+                <span className="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-marine-700 text-white">
+                  <Ikon className="h-7 w-7" />
+                </span>
+                <h3 className="mt-4 text-lg font-bold text-marine-800">{tittel}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted">{tekst}</p>
+                <Link
+                  href={href}
+                  className="mt-4 inline-block font-display text-sm font-bold uppercase tracking-wider text-marine-600 hover:text-marine-500"
+                >
+                  {lenke} →
+                </Link>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       <Gallery />
-      <AreaGrid />
+      <Testimonials />
       <FaqSection faq={forsideFaq} />
+      <CoverageMap fra="snow" />
       <QuoteForm />
-      <CTASection />
+      <CTASection telefonFokus fra="white" />
     </>
   )
 }

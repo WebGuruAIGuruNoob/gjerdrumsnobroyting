@@ -1,15 +1,23 @@
 import type { Metadata } from 'next'
-import { AreaGrid } from '@/components/AreaGrid'
+import { CoverageMap } from '@/components/CoverageMap'
+import { AreaChips } from '@/components/AreaGrid'
 import { Breadcrumbs } from '@/components/Breadcrumbs'
 import { CTASection } from '@/components/CTASection'
 import { QuoteForm } from '@/components/QuoteForm'
 import { SocialProof } from '@/components/SocialProof'
+import { ogFor } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'Områder vi dekker – Snøbrøyting i Gjerdrum og på Romerike',
   description:
     'Vi brøyter i Ask, Grønlund, Veståsen, Kløfta, Frogner, Skedsmokorset og hele Gjerdrum-området. Lokal base og kort utrykningstid – finn ditt område og få uforpliktende tilbud.',
   alternates: { canonical: '/omrader' },
+  openGraph: ogFor({
+    tittel: 'Områder vi dekker – Snøbrøyting i Gjerdrum og på Romerike',
+    beskrivelse:
+      'Lokal base i Gjerdrum og kort utrykningstid i 16 områder på Romerike. Finn ditt område.',
+    path: '/omrader',
+  }),
 }
 
 export default function OmraderSide() {
@@ -23,14 +31,17 @@ export default function OmraderSide() {
         <p className="mt-4 max-w-3xl text-lg text-muted">
           Med base sentralt i Gjerdrum dekker vi hele kommunen og nabotettstedene på Romerike – fra
           Ask og Grønlund til Kløfta, Frogner og Skedsmokorset. Kort utrykningstid og sjåfører med
-          lokalkunnskap er hele forskjellen når snøen kommer: velg området ditt nedenfor, og les hva
-          vi kan gjøre for akkurat din adresse.
+          lokalkunnskap er hele forskjellen når snøen kommer: velg området ditt, og les hva vi kan
+          gjøre for akkurat din adresse.
         </p>
+        <div className="mt-8">
+          <AreaChips />
+        </div>
       </section>
-      <AreaGrid tittel="Velg ditt område" />
+      <CoverageMap fra="snow" />
       <SocialProof />
       <QuoteForm />
-      <CTASection />
+      <CTASection telefonFokus fra="white" />
     </>
   )
 }

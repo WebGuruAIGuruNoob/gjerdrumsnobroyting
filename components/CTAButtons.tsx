@@ -1,3 +1,6 @@
+'use client'
+
+import { track } from '@vercel/analytics'
 import { site } from '@/lib/site'
 
 function PhoneIcon({ className = 'h-5 w-5' }: { className?: string }) {
@@ -19,13 +22,16 @@ function SmsIcon({ className = 'h-5 w-5' }: { className?: string }) {
 export function RingButton({
   large = false,
   label = 'Ring 48 42 42 88',
+  kilde = 'ukjent',
 }: {
   large?: boolean
   label?: string
+  kilde?: string
 }) {
   return (
     <a
       href={site.phoneHref}
+      onClick={() => track('ring_klikk', { kilde })}
       className={`inline-flex items-center justify-center gap-2 rounded-lg bg-beacon-500 font-display font-bold uppercase tracking-wide text-night-950 shadow-md transition hover:bg-beacon-400 ${
         large ? 'px-7 py-4 text-lg' : 'px-4 py-2.5 text-sm'
       }`}
@@ -41,15 +47,18 @@ export function SmsButton({
   href,
   dark = false,
   label = 'Send SMS',
+  kilde = 'ukjent',
 }: {
   large?: boolean
   href?: string
   dark?: boolean
   label?: string
+  kilde?: string
 }) {
   return (
     <a
       href={href ?? site.smsHref}
+      onClick={() => track('sms_klikk', { kilde })}
       className={`inline-flex items-center justify-center gap-2 rounded-lg border-2 font-display font-bold uppercase tracking-wide transition ${
         dark
           ? 'border-white/60 text-white hover:border-white hover:bg-white/10'
@@ -58,6 +67,21 @@ export function SmsButton({
     >
       <SmsIcon className={large ? 'h-6 w-6' : 'h-4 w-4'} />
       {label}
+    </a>
+  )
+}
+
+/** Sekundær-CTA for desktop, der sms:-lenker ofte feiler stille. */
+export function TilbudButton({ large = false }: { large?: boolean }) {
+  return (
+    <a
+      href="/#tilbud"
+      onClick={() => track('tilbud_klikk', { kilde: 'header' })}
+      className={`inline-flex items-center justify-center gap-2 rounded-lg border-2 border-marine-600 font-display font-bold uppercase tracking-wide text-marine-700 transition hover:bg-marine-50 ${
+        large ? 'px-7 py-4 text-lg' : 'px-4 py-2.5 text-sm'
+      }`}
+    >
+      Få tilbud
     </a>
   )
 }

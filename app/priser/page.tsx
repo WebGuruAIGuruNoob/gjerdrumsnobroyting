@@ -4,12 +4,29 @@ import { FaqSection } from '@/components/Faq'
 import { QuoteForm } from '@/components/QuoteForm'
 import { CTASection } from '@/components/CTASection'
 import { SocialProof } from '@/components/SocialProof'
+import { SectionHeading } from '@/components/SectionHeading'
+import { RingButton, SmsButton } from '@/components/CTAButtons'
+import {
+  IconPin,
+  IconPlog,
+  IconStro,
+  IconKlokke,
+  IconTipp,
+  IconAvtale,
+} from '@/components/Icons'
+import { ogFor } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'Priser på snøbrøyting – Hva koster en brøyteavtale?',
   description:
     'Hva koster snøbrøyting i Gjerdrum? Se hva som påvirker prisen på brøyteavtale, strøing og bortkjøring – og få et konkret, uforpliktende tilbud på ditt areal samme dag.',
   alternates: { canonical: '/priser' },
+  openGraph: ogFor({
+    tittel: 'Priser på snøbrøyting – Hva koster en brøyteavtale?',
+    beskrivelse:
+      'Se hva som påvirker prisen på brøyteavtale, strøing og bortkjøring – og få et konkret, uforpliktende tilbud på ditt areal samme dag.',
+    path: '/priser',
+  }),
 }
 
 const prisFaq = [
@@ -41,26 +58,32 @@ const prisFaq = [
 
 const faktorer = [
   {
+    Ikon: IconPin,
     tittel: 'Areal og utforming',
     tekst: 'Størrelsen betyr mest, men formen betyr mye: trange passasjer, snuplasser og hindringer tar mer tid enn åpne flater.',
   },
   {
+    Ikon: IconPlog,
     tittel: 'Utløsningshøyde',
     tekst: 'Skal vi rykke ut ved 5 cm eller 10 cm? Lavere utløsningshøyde gir flere utrykninger og høyere komfort – og litt høyere pris.',
   },
   {
+    Ikon: IconStro,
     tittel: 'Strøing og salting',
     tekst: 'Kombinert avtale med strøing koster mer enn ren brøyting, men er ofte det som faktisk holder arealet trygt og brukbart.',
   },
   {
+    Ikon: IconKlokke,
     tittel: 'Responstid',
     tekst: 'Næringskunder med åpningstider eller døgndrift trenger garantert responstid – det dimensjonerer vi ruter og beredskap etter.',
   },
   {
+    Ikon: IconTipp,
     tittel: 'Tilleggstjenester',
     tekst: 'Bortkjøring av snø, takrydding og vårfeiing kan inkluderes i avtalen eller bestilles ved behov.',
   },
   {
+    Ikon: IconAvtale,
     tittel: 'Avtaleform',
     tekst: 'Fastpris per sesong gir forutsigbarhet, pris per utrykning gir fleksibilitet. Vi setter opp begge deler – du velger.',
   },
@@ -80,20 +103,23 @@ export default function PriserSide() {
           dag ved å sende adressen din på SMS eller ringe {`48 42 42 88`}. Her er hva som faktisk
           bestemmer prisen, slik at du vet hva du skal spørre om – uansett hvem du henter tilbud fra.
         </p>
+        <div className="mt-6 flex flex-wrap gap-3">
+          <RingButton large kilde="priser-intro" />
+          <SmsButton large label="Send adressen på SMS" kilde="priser-intro" />
+        </div>
       </section>
 
       <section className="bg-frost">
         <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6">
-          <h2 className="font-display text-3xl font-bold uppercase tracking-wide text-marine-800">
-            Dette bestemmer prisen
-          </h2>
-          <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {faktorer.map((f) => (
-              <div key={f.tittel} className="rounded-xl border border-ice bg-white p-5 shadow-sm">
-                <h3 className="font-display text-lg font-semibold uppercase tracking-wide text-marine-700">
-                  {f.tittel}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted">{f.tekst}</p>
+          <SectionHeading eyebrow="Prisfaktorene" tittel="Dette bestemmer prisen" />
+          <div className="mt-8 grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
+            {faktorer.map(({ Ikon, tittel, tekst }) => (
+              <div key={tittel} className="border-t-2 border-ice pt-4">
+                <span className="inline-flex text-marine-700">
+                  <Ikon className="h-7 w-7" />
+                </span>
+                <h3 className="mt-2 text-base font-bold text-marine-800">{tittel}</h3>
+                <p className="mt-1.5 text-sm leading-relaxed text-muted">{tekst}</p>
               </div>
             ))}
           </div>

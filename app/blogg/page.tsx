@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { blogginnlegg } from '@/data/blogg'
 import { Breadcrumbs } from '@/components/Breadcrumbs'
 import { CTASection } from '@/components/CTASection'
+import { QuoteForm } from '@/components/QuoteForm'
 
 export const metadata: Metadata = {
   title: 'Blogg – Tips og råd om snøbrøyting og vintervedlikehold',
@@ -63,7 +64,8 @@ export default function BloggSide() {
           ))}
         </div>
       </section>
-      <CTASection />
+      <QuoteForm />
+      <CTASection telefonFokus fra="white" />
     </>
   )
 }

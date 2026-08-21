@@ -1,10 +1,12 @@
 import type { Metadata } from 'next'
 import { Barlow_Condensed, Source_Sans_3 } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/next'
 import { site } from '@/lib/site'
-import { localBusinessSchema } from '@/lib/schema'
+import { localBusinessSchema, webSiteSchema } from '@/lib/schema'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { StickyCTA } from '@/components/StickyCTA'
+import { SeasonBanner } from '@/components/SeasonBanner'
 import './globals.css'
 
 const barlow = Barlow_Condensed({
@@ -43,6 +45,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="nb" className={`${barlow.variable} ${sourceSans.variable}`}>
       <body>
+        <SeasonBanner />
         <Header />
         <main>{children}</main>
         <Footer />
@@ -51,6 +54,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema()) }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema()) }}
+        />
+        <Analytics />
       </body>
     </html>
   )

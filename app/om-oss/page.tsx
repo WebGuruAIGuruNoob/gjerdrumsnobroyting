@@ -5,6 +5,7 @@ import { Breadcrumbs } from '@/components/Breadcrumbs'
 import { SocialProof } from '@/components/SocialProof'
 import { Gallery } from '@/components/Gallery'
 import { CTASection } from '@/components/CTASection'
+import { QuoteForm } from '@/components/QuoteForm'
 
 export const metadata: Metadata = {
   title: 'Om oss – Lokalt brøytefirma i Gjerdrum siden 2005',
@@ -94,9 +95,10 @@ export default function OmOssSide() {
           </dl>
         </section>
       </article>
+      <Gallery fra="snow" />
       <SocialProof />
-      <Gallery />
-      <CTASection />
+      <QuoteForm />
+      <CTASection telefonFokus fra="white" />
     </>
   )
 }

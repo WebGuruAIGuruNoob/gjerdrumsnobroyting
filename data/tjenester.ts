@@ -6,9 +6,9 @@ export const tjenester: Tjeneste[] = [
     navn: 'Snøbrøyting',
     kortBeskrivelse:
       'Maskinell brøyting av innkjørsler, gårdsplasser, parkeringsplasser og veier – automatisk utrykning når snøen kommer.',
-    metaTittel: 'Snøbrøyting i Gjerdrum og på Romerike – Fast avtale & døgnberedskap',
+    metaTittel: 'Snøbrøyting – Fast brøyteavtale med automatisk utrykning',
     metaBeskrivelse:
-      'Profesjonell snøbrøyting for privat, borettslag og bedrift i Gjerdrum og på Romerike. Automatisk utrykning, moderne maskinpark og døgnbemanning i sesong. Få uforpliktende tilbud.',
+      'Slik fungerer en brøyteavtale: utløsningshøyde, automatisk utrykning og skånsom maskinell brøyting for privat, borettslag og bedrift. Moderne maskinpark – få uforpliktende tilbud.',
     heroTittel: 'Snøbrøyting med automatisk utrykning',
     ingress:
       'Når snøen legger seg, er vi allerede på vei. Med fast brøyteavtale overvåker vi været, rykker ut når snøfallet passerer avtalt utløsningshøyde, og sørger for at du våkner til ryddet innkjørsel – uten at du trenger å løfte en finger.',
@@ -16,9 +16,9 @@ export const tjenester: Tjeneste[] = [
     bildeAlt: 'Traktor med skjær og fres brøyter snø i Gjerdrum',
     seksjoner: [
       {
-        tittel: 'Slik fungerer brøyteavtalen',
+        tittel: 'Hvordan fungerer en brøyteavtale?',
         avsnitt: [
-          'En brøyteavtale hos oss er enkel: vi avtaler en utløsningshøyde – typisk 5–10 cm – og fra da av er snøen vårt ansvar. Vi følger værradar og lokale forhold døgnet rundt i sesongen, og maskinene rykker ut automatisk når snøfallet passerer grensen. Du trenger aldri ringe oss når det snør.',
+          'En brøyteavtale er en fast avtale der vi overvåker været og rykker ut automatisk når snøfallet passerer en avtalt utløsningshøyde – typisk 5–10 cm. Snøbrøyting – eller snøbrøying, som mange skriver – handler altså ikke om å bestille hjelp når det snør, men om at hjelpen allerede er avtalt: vi følger værradar og lokale forhold døgnet rundt i sesongen, og du trenger aldri ringe oss når snøen kommer.',
           'Vi brøyter med traktorer utstyrt med skjær og fres, tilpasset alt fra smale private innkjørsler til store parkeringsarealer. Sjåførene våre kjenner rutene sine og vet hvor kantstein, belegningsstein og plenkanter ligger – det gir skånsom brøyting og færre skader når snøen smelter.',
         ],
       },
@@ -67,6 +67,10 @@ export const tjenester: Tjeneste[] = [
       {
         sp: 'Hvor stort område dekker dere?',
         svar: 'Vi har base i Gjerdrum og dekker hele kommunen samt nabotettstedene på Romerike – blant annet Ask, Kløfta, Frogner, Lindeberg, Eltonåsen og Skedsmokorset.',
+      },
+      {
+        sp: 'Heter det snøbrøyting eller snøbrøying?',
+        svar: 'Begge deler brukes – «snøbrøyting» er den vanligste skrivemåten, mens mange sier og skriver «snøbrøying». Tjenesten er uansett den samme: maskinell rydding av snø fra innkjørsler, veier og plasser, hos oss alltid med automatisk utrykning.',
       },
     ],
     relaterteTjenester: ['stroing-og-salting', 'bortkjoring-av-sno', 'vintervedlikehold-borettslag'],

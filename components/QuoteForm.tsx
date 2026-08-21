@@ -1,13 +1,15 @@
 'use client'
 
 import { useActionState } from 'react'
+import { track } from '@vercel/analytics'
 import { sendTilbudsforesporsel, type SkjemaStatus } from '@/app/actions'
 import { omrader } from '@/data/omrader'
+import { SectionHeading } from './SectionHeading'
 
 const inputKlasse =
-  'w-full rounded-lg border border-ice bg-white px-4 py-3 text-ink placeholder:text-muted/60 focus:border-marine-500'
+  'w-full rounded-lg border border-ice bg-white px-4 py-3 text-ink placeholder:text-muted/60 focus:border-marine-500 focus-visible:ring-2 focus-visible:ring-marine-500/40'
 
-/** Tilbudsskjema for privat, borettslag og bedrift. */
+/** Tilbudsskjema for privat, borettslag og bedrift. Kun navn + telefon er påkrevd. */
 export function QuoteForm({ forhandsvalgtOmrade }: { forhandsvalgtOmrade?: string }) {
   const [status, formAction, venter] = useActionState<SkjemaStatus, FormData>(
     sendTilbudsforesporsel,
@@ -15,15 +17,13 @@ export function QuoteForm({ forhandsvalgtOmrade }: { forhandsvalgtOmrade?: strin
   )
 
   return (
-    <section id="tilbud" className="bg-white">
+    <section id="tilbud" className="scroll-mt-28 bg-white">
       <div className="mx-auto max-w-3xl px-4 py-14 sm:px-6">
-        <h2 className="font-display text-3xl font-bold uppercase tracking-wide text-marine-800">
-          Få uforpliktende tilbud
-        </h2>
-        <p className="mt-2 text-muted">
-          For borettslag, sameier, bedrifter og private. Fyll ut skjemaet, så kontakter vi deg innen
-          24 timer – eller ring oss direkte for raskere svar.
-        </p>
+        <SectionHeading
+          eyebrow="Uforpliktende og gratis"
+          tittel="Få tilbud på din adresse"
+          ingress="Send adressen, så regner vi på arealet ditt – for private, borettslag, sameier og bedrifter. Vi svarer innen 24 timer, som regel raskere."
+        />
         <form action={formAction} className="mt-8 grid gap-4 sm:grid-cols-2">
           <div className="hidden" aria-hidden="true">
             <label>
@@ -45,8 +45,21 @@ export function QuoteForm({ forhandsvalgtOmrade }: { forhandsvalgtOmrade?: strin
               id="telefon"
               name="telefon"
               type="tel"
+              inputMode="tel"
               required
               autoComplete="tel"
+              className={inputKlasse}
+            />
+          </div>
+          <div className="sm:col-span-2">
+            <label htmlFor="adresse" className="mb-1 block text-sm font-semibold">
+              Adressen som skal brøytes
+            </label>
+            <input
+              id="adresse"
+              name="adresse"
+              autoComplete="street-address"
+              placeholder="F.eks. Askvegen 12, 2022 Gjerdrum"
               className={inputKlasse}
             />
           </div>
@@ -98,22 +111,31 @@ export function QuoteForm({ forhandsvalgtOmrade }: { forhandsvalgtOmrade?: strin
               className={inputKlasse}
             />
           </div>
-          {status?.feil && (
-            <p role="alert" className="rounded-lg bg-beacon-500/15 px-4 py-3 text-sm font-semibold text-beacon-700 sm:col-span-2">
-              {status.feil}
-            </p>
-          )}
+          <div aria-live="polite" className="sm:col-span-2">
+            {status?.feil && (
+              <p role="alert" className="rounded-lg bg-beacon-500/15 px-4 py-3 text-sm font-semibold text-beacon-800">
+                {status.feil}
+              </p>
+            )}
+          </div>
           <div className="sm:col-span-2">
             <button
               type="submit"
               disabled={venter}
-              className="w-full rounded-lg bg-marine-600 px-7 py-4 font-display text-lg font-bold uppercase tracking-wide text-white transition hover:bg-marine-500 disabled:opacity-60 sm:w-auto"
+              onClick={() => track('skjema_sendt')}
+              className="w-full rounded-lg bg-beacon-500 px-7 py-4 font-display text-lg font-bold uppercase tracking-wide text-night-950 shadow-md transition hover:bg-beacon-400 disabled:opacity-60 sm:w-auto"
             >
-              {venter ? 'Sender …' : 'Send forespørsel'}
+              {venter ? 'Sender …' : 'Få uforpliktende tilbud'}
             </button>
-            <p className="mt-3 text-xs text-muted">
-              Uforpliktende og gratis. Vi bruker opplysningene kun til å besvare henvendelsen din –
-              se personvernerklæringen.
+            <p className="mt-2 text-sm font-semibold text-marine-700">
+              Svar innen 24 timer – som regel samme dag.
+            </p>
+            <p className="mt-2 text-xs text-muted">
+              Gratis og uforpliktende. Vi bruker opplysningene kun til å besvare henvendelsen din –
+              se personvernerklæringen. {` `}
+              <span className="whitespace-nowrap">
+                Langsholt Snø og Grønt AS · Org.nr 987 714 603 · Etablert 2005
+              </span>
             </p>
           </div>
         </form>

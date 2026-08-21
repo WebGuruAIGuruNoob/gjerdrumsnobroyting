@@ -60,6 +60,22 @@ body {
   outline-offset: 2px;
 }
 
+/*
+ * Felles fotobehandling: marine-gradert overlegg + lett desaturering
+ * samler ekte maskinfoto og illustrasjoner til ett art-directert sett.
+ */
+.foto img {
+  filter: saturate(0.85) contrast(1.05);
+}
+.foto::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(rgba(12, 47, 76, 0.16), rgba(8, 18, 32, 0.26));
+}
+
 /* Typografi for MDX-blogginnhold */
 .prose-blogg {
   @apply text-ink;
