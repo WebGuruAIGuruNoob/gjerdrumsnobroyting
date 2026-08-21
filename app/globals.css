@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@theme {
+  /* Grunnfarger: vinternatt + snø */
+  --color-snow: #f5f9fc;
+  --color-frost: #e6eff7;
+  --color-ice: #d3e5f2;
+
+  --color-night-950: #081220;
+  --color-night-900: #0b1826;
+  --color-night-800: #102336;
+  --color-night-700: #17324c;
+
+  --color-ink: #13293d;
+  --color-muted: #4c657c;
+
+  /* Primær: dyp nordisk marineblå */
+  --color-marine-50: #eef5fb;
+  --color-marine-100: #dcebf7;
+  --color-marine-200: #b8d6ee;
+  --color-marine-500: #1e6ba8;
+  --color-marine-600: #14568a;
+  --color-marine-700: #0f4470;
+  --color-marine-800: #0d395a;
+  --color-marine-900: #0c2f4c;
+
+  /* CTA: varsellys-oransje (roterende lys på brøytebil) */
+  --color-beacon-400: #ffa53d;
+  --color-beacon-500: #f08c1b;
+  --color-beacon-600: #e07c00;
+  --color-beacon-700: #c96a00;
+
+  --font-display: var(--font-barlow), "Arial Narrow", sans-serif;
+  --font-sans: var(--font-source), "Segoe UI", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  @apply bg-snow text-ink antialiased;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-beacon-500);
+  outline-offset: 2px;
+}
+
+/* Typografi for MDX-blogginnhold */
+.prose-blogg {
+  @apply text-ink;
+}
+.prose-blogg h2 {
+  @apply mt-10 font-display text-2xl font-bold uppercase tracking-wide text-marine-800 sm:text-3xl;
+}
+.prose-blogg h3 {
+  @apply mt-8 font-display text-xl font-semibold tracking-wide text-marine-700;
+}
+.prose-blogg p {
+  @apply mt-4 max-w-prose leading-relaxed;
+}
+.prose-blogg ul,
+.prose-blogg ol {
+  @apply mt-4 max-w-prose space-y-2 pl-6;
+}
+.prose-blogg ul {
+  @apply list-disc;
+}
+.prose-blogg ol {
+  @apply list-decimal;
+}
+.prose-blogg a {
+  @apply font-semibold text-marine-600 underline underline-offset-2 hover:text-marine-500;
+}
+.prose-blogg strong {
+  @apply font-bold;
+}
+.prose-blogg blockquote {
+  @apply mt-4 border-l-4 border-beacon-500 bg-frost py-2 pl-4 italic;
+}
