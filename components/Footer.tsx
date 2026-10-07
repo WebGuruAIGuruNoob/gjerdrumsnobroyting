@@ -77,6 +77,7 @@ export function Footer() {
             © {new Date().getFullYear()} {site.legalName}. Alle rettigheter forbeholdt.
           </p>
           <p>
+            <a href="/bot-policy.txt" className="mr-4 inline-flex min-h-11 items-center hover:text-white">Robot &amp; AI content policy</a>
             <Link href="/personvern" className="hover:text-white">
               Personvernerklæring
             </Link>

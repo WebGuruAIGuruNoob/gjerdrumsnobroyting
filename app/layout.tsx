@@ -44,7 +44,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="nb" className={`${barlow.variable} ${sourceSans.variable}`}>
-      <body>
+      <head><meta name="tdm-reservation" content="0" /><link rel="license" type="text/plain" href="/bot-policy.txt" /></head><body>
         <SeasonBanner />
         <Header />
         <main>{children}</main>

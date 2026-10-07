@@ -1,0 +1,70 @@
+[
+  {
+    "location": "/$",
+    "tdm-reservation": 0
+  },
+  {
+    "location": "/blogg$",
+    "tdm-reservation": 0
+  },
+  {
+    "location": "/blogg/$",
+    "tdm-reservation": 0
+  },
+  {
+    "location": "/kontakt$",
+    "tdm-reservation": 0
+  },
+  {
+    "location": "/kontakt/$",
+    "tdm-reservation": 0
+  },
+  {
+    "location": "/om-oss$",
+    "tdm-reservation": 0
+  },
+  {
+    "location": "/om-oss/$",
+    "tdm-reservation": 0
+  },
+  {
+    "location": "/omrader$",
+    "tdm-reservation": 0
+  },
+  {
+    "location": "/omrader/$",
+    "tdm-reservation": 0
+  },
+  {
+    "location": "/personvern$",
+    "tdm-reservation": 0
+  },
+  {
+    "location": "/personvern/$",
+    "tdm-reservation": 0
+  },
+  {
+    "location": "/priser$",
+    "tdm-reservation": 0
+  },
+  {
+    "location": "/priser/$",
+    "tdm-reservation": 0
+  },
+  {
+    "location": "/takk$",
+    "tdm-reservation": 0
+  },
+  {
+    "location": "/takk/$",
+    "tdm-reservation": 0
+  },
+  {
+    "location": "/tjenester$",
+    "tdm-reservation": 0
+  },
+  {
+    "location": "/tjenester/$",
+    "tdm-reservation": 0
+  }
+]
