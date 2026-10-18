@@ -9,11 +9,23 @@ export function Footer() {
     <footer className="bg-night-900 pb-24 text-ice md:pb-0">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-2 lg:grid-cols-4">
         <div>
-          <Logo dark />
+          <Link href="/" aria-label="Gjerdrum Snøbrøyting – til forsiden" className="inline-flex rounded-sm">
+            <Logo dark />
+          </Link>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-ice/80">
             Profesjonell snøbrøyting, strøing og vintervedlikehold i Gjerdrum og på Romerike.
             Etablert {site.founded} – erfaring siden 90-tallet og døgnbemanning i sesongen.
           </p>
+          <a
+            href="/gjerdrum-snobroyting-logo.svg"
+            download="gjerdrum-snobroyting-logo.svg"
+            className="mt-2 inline-flex min-h-11 items-center gap-2 rounded-sm text-sm text-ice/80 transition hover:text-white"
+          >
+            <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5" />
+            </svg>
+            Last ned logo (SVG)
+          </a>
           <div className="mt-5 space-y-1 text-sm">
             <p>
               <a href={site.phoneHref} className="font-semibold text-white hover:text-beacon-400">
