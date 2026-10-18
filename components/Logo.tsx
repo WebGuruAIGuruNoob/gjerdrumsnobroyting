@@ -32,20 +32,12 @@ export function LogoMark({ className = 'h-10 w-10' }: { className?: string }) {
 
 export function Logo({ dark = false }: { dark?: boolean }) {
   return (
-    <span className="flex items-center gap-2.5">
-      <LogoMark className="h-10 w-10 shrink-0" />
-      <span className="flex flex-col leading-none">
-        <span
-          className={`font-display text-xl font-bold uppercase tracking-wide ${dark ? 'text-white' : 'text-marine-800'}`}
-        >
-          Gjerdrum
-        </span>
-        <span
-          className={`font-display text-[0.78rem] font-semibold uppercase tracking-[0.22em] ${dark ? 'text-ice' : 'text-marine-600'}`}
-        >
-          Snøbrøyting
-        </span>
-      </span>
-    </span>
+    <img
+      src={dark ? '/gjerdrum-snobroyting-logo-lys.svg' : '/gjerdrum-snobroyting-logo.svg'}
+      alt="Gjerdrum Snøbrøyting"
+      width={174}
+      height={49}
+      className="block h-auto w-[145px]"
+    />
   )
 }
