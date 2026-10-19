@@ -37,7 +37,7 @@ export const skedsmokorset: Omrade = {
   },
   segmenter: {
     privat: [
-      'Boligeiere på Huseby, Brånås, i Tæruddalen og på Holt/Vestvollen velger fast brøyteavtale av én grunn: forutsigbarhet. Snør det mer enn avtalt utløsningshøyde i løpet av natten, står maskinen i gaten din på morgenkvisten – uten at du har bestilt, ringt eller sjekket appen. Avtalen skreddersys med areal, snuplass, gjesteparkering og eventuell strøing, og brøytestikker settes ut om høsten så kantstein og plen overlever vinteren.',
+      'Boligeiere på Huseby, Brånås, i Tæruddalen og på Holt/Vestvollen velger fast brøyteavtale av én grunn: forutsigbarhet. Snør det mer enn avtalt utløsningshøyde i løpet av natten, står maskinen i gaten din på morgenkvisten – uten at du har bestilt, ringt eller sjekket appen. Avtalen skreddersys med areal, snuplass, gjesteparkering og eventuell strøing, og brøytestikker bør settes ut om høsten så kantstein og plen overlever vinteren.',
       'Har du innkjørsel mot en trafikkert vei, kjenner du problemet med den tunge, hardpakkede brøytekanten som veibrøytingen legger igjen. Den tar vi i samme vending – det er en del av standardleveransen, ikke et pristillegg.',
       'Ikke alle trenger fast avtale – noen trenger bare hjelp her og nå. Har snøfreseren streiket, eller kom du hjem fra vinterferie til en nedsnødd gårdsplass, tar vi enkeltoppdrag på Skedsmokorset når rutekapasiteten tillater det, ofte i løpet av samme døgn. Mange starter med et slikt engangsbesøk og ender med sesongavtale vinteren etter – det sier vel sitt om hvor behagelig det er å slippe å tenke på snø i det hele tatt.',
     ],
@@ -91,7 +91,7 @@ export const skedsmokorset: Omrade = {
     },
     {
       sp: 'Når bør jeg inngå brøyteavtale for Skedsmokorset?',
-      svar: 'Beste tidspunkt for å inngå brøyteavtale på Skedsmokorset er september til november, før første snøfall. Da rekker vi befaring og utsetting av brøytestikker, og du er sikret plass på rutene fra sesongstart. Trenger du avtale midt på vinteren, tar vi deg inn dersom det er ledig kapasitet i området ditt.',
+      svar: 'Beste tidspunkt for å inngå brøyteavtale på Skedsmokorset er september til november, før første snøfall. Da rekker vi befaring og anbefaling om utsetting av brøytestikker, og du er sikret plass på rutene fra sesongstart. Trenger du avtale midt på vinteren, tar vi deg inn dersom det er ledig kapasitet i området ditt.',
     },
   ],
   naboOmrader: ['snobroyting-heksebergasen', 'snobroyting-frogner', 'snobroyting-klofta'],
