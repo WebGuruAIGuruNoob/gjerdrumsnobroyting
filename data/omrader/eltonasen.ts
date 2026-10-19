@@ -76,7 +76,7 @@ export const eltonasen: Omrade = {
     },
     {
       sp: 'Når må jeg bestille for å være sikret plass før vinteren?',
-      svar: 'Helst i september eller oktober. Eltonåsen får ofte den første snøen tidligere enn lavlandet, og rutene våre fylles opp utover høsten. Bestiller du tidlig, rekker vi befaring og brøytestikker i god tid før første snøfall.',
+      svar: 'Helst i september eller oktober. Eltonåsen får ofte den første snøen tidligere enn lavlandet, og rutene våre fylles opp utover høsten. Bestiller du tidlig, rekker vi befaring og anbefaler at brøytestikker settes ut i god tid før første snøfall.',
     },
   ],
   naboOmrader: ['snobroyting-ask', 'snobroyting-gronlundfjellet', 'snobroyting-vestasen'],
