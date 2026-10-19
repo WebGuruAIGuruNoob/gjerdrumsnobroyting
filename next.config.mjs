@@ -4,7 +4,10 @@ import createMDX from '@next/mdx'
 const nextConfig = {
   pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
   async headers() {
-    return [{ source: '/:path*', headers: [{ key: 'Link', value: '</llms.txt>; rel="describedby"' }] }]
+    return [{ source: '/:path*', headers: [
+      { key: 'Link', value: '</llms.txt>; rel="describedby"' },
+      { key: 'X-Robots-Tag', value: 'index, follow' },
+    ] }]
   },
   async redirects() {
     // Gamle langsholt.com-stier → nærmeste ekvivalent, klare for den
