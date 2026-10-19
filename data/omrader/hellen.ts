@@ -34,7 +34,7 @@ export const hellen: Omrade = {
   segmenter: {
     privat: [
       'Bor du på Hellen eller langs Rv120 i nærheten, kjenner du problemet: veibrøytingen fyller avkjørselen din med hardpakket snø, gjerne rett etter at du har måkt selv. Med fast avtale hos oss slipper du den kampen – vi fjerner både nysnøen og brøytekanten i samme runde, slik at du kommer deg trygt ut på riksveien om morgenen.',
-      'Avtalen skreddersys eiendommen din: utløsningshøyde du selv er med på å bestemme, strøing hvis avkjørselen er bratt eller svingete, og brøytestikker som beskytter kantstein og plen. Én fast pris for sesongen, ingen overraskelser.',
+      'Avtalen skreddersys eiendommen din: utløsningshøyde du selv er med på å bestemme, strøing hvis avkjørselen er bratt eller svingete, og anbefaling om brøytestikker for å beskytte kantstein og plen. Én fast pris for sesongen, ingen overraskelser.',
     ],
     borettslag: [
       'Rundt Hellen finnes det ikke tradisjonelle borettslag, men velforeninger og veilag som deler ansvar for private veier og fellesarealer. For dem tilbyr vi samlede vinteravtaler: hele veistrekningen brøytes under ett, bakker og kryss strøs, og fellesskapet betaler én avtalt sum i stedet for at hver husstand skal finne sin egen løsning.',
