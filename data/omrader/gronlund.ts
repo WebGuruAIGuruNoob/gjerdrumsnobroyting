@@ -35,7 +35,7 @@ export const gronlund: Omrade = {
   segmenter: {
     privat: [
       'De aller fleste kundene våre på Grønlund er vanlige husstander med enebolig eller rekkehus – familier som vil slippe å starte dagen med snømåking. Med fast brøyteavtale overvåker vi snøfallet og rykker ut automatisk: du våkner til ryddet innkjørsel, uten å ha løftet en finger eller sendt en melding.',
-      'Ved sesongstart merker vi arealet med brøytestikker og noterer oss kantstein, plen og annet som ikke tåler skjær. Ønsker du strøing i tillegg, legger vi det inn i samme avtale – da håndterer vi både snø og holke uten at du trenger å bestille noe underveis.',
+      'Ved sesongstart anbefaler vi at brøytestikker settes ut langs arealet og noterer oss kantstein, plen og annet som ikke tåler skjær. Ønsker du strøing i tillegg, legger vi det inn i samme avtale – da håndterer vi både snø og holke uten at du trenger å bestille noe underveis.',
     ],
     borettslag: [
       'Grønlund har mange rekkehusfelt, sameier og velforeninger med felles stikkveier, gjesteparkering og gangarealer. For disse setter vi opp én samlet vinterdriftsavtale: maskinell brøyting av kjørearealer, håndrydding av trapper og inngangspartier, og strøing der folk faktisk går. Renovasjonsbilen og hjemmetjenesten skal alltid komme frem.',
@@ -73,7 +73,7 @@ export const gronlund: Omrade = {
     },
     {
       sp: 'Når på året bør vi bestille brøyteavtale for Grønlund?',
-      svar: 'Ta kontakt i løpet av høsten, helst før november. Da sikrer du plass på ruten, og vi rekker befaring og utsetting av brøytestikker før den første snøen legger seg.',
+      svar: 'Ta kontakt i løpet av høsten, helst før november. Da sikrer du plass på ruten, og vi rekker befaring og anbefaling om at brøytestikker bør settes ut før den første snøen legger seg.',
     },
     {
       sp: 'Hva gjør dere når snøen ikke lenger har noe sted å ligge?',
