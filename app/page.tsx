@@ -71,7 +71,7 @@ const segmenter = [
     Ikon: IconPlog,
     tittel: 'Privat',
     tekst:
-      'Fast brøyteavtale for innkjørsel og gårdsplass: ryddet før du skal på jobb, brøytestikker bør settes ut ved sesongstart og skånsom brøyting som skåner plen og belegningsstein. Legg til strøing hvis du bor i bakke.',
+      'Fast brøyteavtale for innkjørsel og gårdsplass: ryddet før du skal på jobb, brøytestikker som bør settes ut ved sesongstart, og skånsom brøyting som skåner plen og belegningsstein. Legg til strøing hvis du bor i bakke.',
     href: '/tjenester/snobroyting',
     lenke: 'Snøbrøyting for private',
   },
