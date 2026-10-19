@@ -36,7 +36,7 @@ export const frogner: Omrade = {
   },
   segmenter: {
     privat: [
-      'Eier du bolig på Frogner, er en fast brøyteavtale den enkleste måten å vintersikre hverdagen på. Avtalen utløses automatisk av snøfallet – ikke av en telefon fra deg – og vi dimensjonerer den etter innkjørselen din: areal, snuplass, gjesteparkering og eventuell strøing i én og samme pakke. Brøytestikker settes ut ved sesongstart, slik at plen, kantstein og belegning ikke får seg en trøkk i mørket.',
+      'Eier du bolig på Frogner, er en fast brøyteavtale den enkleste måten å vintersikre hverdagen på. Avtalen utløses automatisk av snøfallet – ikke av en telefon fra deg – og vi dimensjonerer den etter innkjørselen din: areal, snuplass, gjesteparkering og eventuell strøing i én og samme pakke. Brøytestikker bør settes ut ved sesongstart, slik at plen, kantstein og belegning ikke får seg en trøkk i mørket.',
       'Mange på Frogner pendler tidlig, og derfor prioriterer vi boligrutene her i morgentimene. Trenger du i tillegg hjelp med snørik veikant etter kommunal brøyting, tar vi brøytekanten i avkjørselen som en selvfølgelig del av jobben. Kombinerer du avtalen med strøing, dekker vi også hålkedagene – de kommer oftere enn de store snøfallene og er minst like farlige for både bil og rygg.',
       'Trenger du bare hjelp en enkelt gang, ordner vi det også. Et snøfall som ble større enn meldt, en gårdsplass som skal tømmes før håndverkerne kommer, eller en eldre slektning på Frogner som ikke lenger bør måke selv – slike oppdrag tar vi når rutene har rom for det, gjerne raskt siden avstanden fra basen er så kort. Du betaler for jobben som gjøres, ikke for et abonnement du ikke ville ha.',
     ],
@@ -62,7 +62,7 @@ export const frogner: Omrade = {
     },
     {
       sp: 'Hvordan tegner jeg brøyteavtale på Frogner?',
-      svar: 'Du tegner brøyteavtale på Frogner ved å kontakte oss med adresse og en kort beskrivelse av arealet – så får du tilbud på en sesongavtale. Etter aksept setter vi ut brøytestikker, registrerer eiendommen på ruten – og fra da av går alt av seg selv gjennom vinteren.',
+      svar: 'Du tegner brøyteavtale på Frogner ved å kontakte oss med adresse og en kort beskrivelse av arealet – så får du tilbud på en sesongavtale. Etter aksept anbefaler vi at brøytestikker settes ut, registrerer eiendommen på ruten – og fra da av går alt av seg selv gjennom vinteren.',
     },
     {
       sp: 'Jeg pendler med tog fra Frogner stasjon – rekker jeg morgentoget etter nattsnø?',
@@ -90,7 +90,7 @@ export const frogner: Omrade = {
     },
     {
       sp: 'Når på året bør jeg bestille brøyting for Frogner?',
-      svar: 'Bestill brøyting for Frogner i løpet av høsten, helst i september–november. Da er du garantert plass på rutene før første snøfall, og vi rekker befaring og utsetting av brøytestikker i god tid. Ta likevel kontakt midt i sesongen også – vi finner ofte en løsning. Merk at morgenkapasiteten er begrenset, og at pendlerfeltene rundt stasjonen erfaringsmessig fylles opp først.',
+      svar: 'Bestill brøyting for Frogner i løpet av høsten, helst i september–november. Da er du garantert plass på rutene før første snøfall, og vi rekker befaring og anbefaling om at brøytestikker bør settes ut i god tid. Ta likevel kontakt midt i sesongen også – vi finner ofte en løsning. Merk at morgenkapasiteten er begrenset, og at pendlerfeltene rundt stasjonen erfaringsmessig fylles opp først.',
     },
   ],
   naboOmrader: [
