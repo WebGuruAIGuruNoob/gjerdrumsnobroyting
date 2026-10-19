@@ -73,7 +73,7 @@ export const gronlund: Omrade = {
     },
     {
       sp: 'Når på året bør vi bestille brøyteavtale for Grønlund?',
-      svar: 'Ta kontakt i løpet av høsten, helst før november. Da sikrer du plass på ruten, og vi rekker befaring og utsetting av brøytestikker før den første snøen legger seg.',
+      svar: 'Ta kontakt i løpet av høsten, helst før november. Da sikrer du plass på ruten, og vi rekker befaring og anbefaling om utsetting av brøytestikker før den første snøen legger seg.',
     },
     {
       sp: 'Hva gjør dere når snøen ikke lenger har noe sted å ligge?',
