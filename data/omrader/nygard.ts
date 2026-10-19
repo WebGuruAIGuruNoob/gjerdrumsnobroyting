@@ -33,7 +33,7 @@ export const nygard: Omrade = {
   },
   segmenter: {
     privat: [
-      'Har du enebolig på Nygård, er sjansen stor for at innkjørselen din er for lang og for tung til at snøskuffe er noe reelt alternativ. En fast brøyteavtale hos oss betyr at maskinen kommer automatisk når snødybden passerer avtalt grense – du trenger verken ringe eller følge med på værmeldingen. Vi merker opp med brøytestikker om høsten, slik at plen, steinsetting og stikkrenner står urørt gjennom vinteren.',
+      'Har du enebolig på Nygård, er sjansen stor for at innkjørselen din er for lang og for tung til at snøskuffe er noe reelt alternativ. En fast brøyteavtale hos oss betyr at maskinen kommer automatisk når snødybden passerer avtalt grense – du trenger verken ringe eller følge med på værmeldingen. Vi anbefaler at brøytestikker settes ut om høsten, slik at plen, steinsetting og stikkrenner står urørt gjennom vinteren.',
       'Trenger du mer enn brøyting, setter vi sammen avtalen etter eiendommen din: strøing av bratte partier, bortkjøring når snøhaugene begynner å stjele parkeringsplass, og vårfeiing som fjerner strøgrusen når sesongen er over. Alt fra én leverandør, med én pris det er lett å forholde seg til.',
     ],
     borettslag: [
@@ -72,7 +72,7 @@ export const nygard: Omrade = {
     },
     {
       sp: 'Når på året bør jeg bestille brøyteavtale for Nygård?',
-      svar: 'Ta kontakt i løpet av høsten, gjerne før første frostnatt. Da rekker vi befaring, setter ut brøytestikker og legger eiendommen inn i rutene før snøen kommer. Venter du til desember, kan kapasiteten være fylt opp.',
+      svar: 'Ta kontakt i løpet av høsten, gjerne før første frostnatt. Da rekker vi befaring, anbefaler at brøytestikker settes ut og legger eiendommen inn i rutene før snøen kommer. Venter du til desember, kan kapasiteten være fylt opp.',
     },
     {
       sp: 'Hva gjør jeg når snøhaugene tar all plassen på tunet?',
