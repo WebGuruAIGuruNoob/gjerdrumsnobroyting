@@ -10,8 +10,8 @@ const steg = [
     tekst: 'Vi avtaler når brøytingen skal utløses (typisk 5–10 cm snø), hva som skal strøs, og eventuelle spesialbehov som håndrydding eller bortkjøring.',
   },
   {
-    tittel: 'Brøytestikker settes ut',
-    tekst: 'Før sesongstart merker vi arealet ditt med brøytestikker, slik at kanter, belegningsstein og plen skånes gjennom hele vinteren.',
+    tittel: 'Brøytestikker bør settes ut',
+    tekst: 'Før sesongstart bør arealet merkes med brøytestikker, slik at kanter, belegningsstein og plen skånes gjennom hele vinteren.',
   },
   {
     tittel: 'Automatisk utrykning',
