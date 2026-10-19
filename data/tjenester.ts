@@ -62,7 +62,7 @@ export const tjenester: Tjeneste[] = [
       },
       {
         sp: 'Kan brøytingen skade plen eller belegningsstein?',
-        svar: 'Vi kjører med erfarne sjåfører som kjenner rutene sine, og stiller skjæret riktig for underlaget. Vi anbefaler brøytestikker langs kanter – det setter vi ut ved sesongstart som en del av avtalen.',
+        svar: 'Vi kjører med erfarne sjåfører som kjenner rutene sine, og stiller skjæret riktig for underlaget. Vi anbefaler at brøytestikker settes ut langs kanter før sesongen, for å beskytte plen og belegningsstein.',
       },
       {
         sp: 'Hvor stort område dekker dere?',
@@ -305,7 +305,7 @@ export const tjenester: Tjeneste[] = [
       },
       {
         sp: 'Når bør styret tegne avtale?',
-        svar: 'Før sesongen – helst i september–oktober. Da rekker vi befaring, ruteplanlegging og utsetting av brøytestikker før første snøfall, og dere er sikret kapasitet hos oss.',
+        svar: 'Før sesongen – helst i september–oktober. Da rekker vi befaring, ruteplanlegging og anbefaling om utsetting av at brøytestikker bør settes ut før første snøfall, og dere er sikret kapasitet hos oss.',
       },
     ],
     relaterteTjenester: ['snobroyting', 'stroing-og-salting', 'takrydding'],
