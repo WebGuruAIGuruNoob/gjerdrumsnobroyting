@@ -27,7 +27,7 @@ export const fjellbakk: Omrade = {
     tittel: 'Vinter på Fjellbakk: private veier og eget ansvar',
     avsnitt: [
       'I mindre boligområder som Fjellbakk er det de private arealene som avgjør vinterhverdagen. Kommunen brøyter det kommunale veinettet, men innkjørselen, gårdsplassen og eventuelle private adkomstveier er huseiernes eget ansvar – og de blir gjerne liggende urørt lengst når snøen laver ned. Med maskinbrøyting tar vi unna på minutter det som ville tatt timer med skuffe, og brøytekanten som veibrøytingen legger igjen i avkjørselen, tar vi i samme runde.',
-      'Gjerdrum er en bygd med kupert terreng, og også rundt Fjellbakk finnes det partier med stigning der føret skifter raskt mellom snø, sørpe og is gjennom en vintersesong. Vi vurderer derfor hver eiendom for seg på befaring: hvor snøen bør legges, om strøing bør inn i avtalen, og hvor brøytestikkene må stå for at vi skal treffe presist også i mørke og snøfokk.',
+      'Gjerdrum er en bygd med kupert terreng, og også rundt Fjellbakk finnes det partier med stigning der føret skifter raskt mellom snø, sørpe og is gjennom en vintersesong. Vi vurderer derfor hver eiendom for seg på befaring: hvor snøen bør legges, om strøing bør inn i avtalen, og hvor brøytestikkene bør stå for at vi skal treffe presist også i mørke og snøfokk.',
     ],
   },
   segmenter: {
@@ -71,7 +71,7 @@ export const fjellbakk: Omrade = {
     },
     {
       sp: 'Når bør jeg sikre meg brøyteavtale for kommende vinter?',
-      svar: 'Jo før på høsten, jo bedre – helst innen oktober. Da får vi tatt befaring på bar mark, satt ut brøytestikker og plassert deg på ruten før første snøfall, i stedet for at du må stille bakerst i køen midt i sesongen.',
+      svar: 'Jo før på høsten, jo bedre – helst innen oktober. Da får vi tatt befaring på bar mark, brøytestikker bør settes ut og plassert deg på ruten før første snøfall, i stedet for at du må stille bakerst i køen midt i sesongen.',
     },
     {
       sp: 'Hva mer enn brøyting kan dere hjelpe med på Fjellbakk?',
