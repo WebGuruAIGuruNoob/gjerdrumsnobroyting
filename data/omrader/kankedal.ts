@@ -33,7 +33,7 @@ export const kankedal: Omrade = {
   },
   segmenter: {
     privat: [
-      'For husstandene i Kankedal er en fast vinteravtale den forskjellen som gjør at man kan bo landlig uten å være væravhengig. Vi brøyter innkjørselen og den private adkomsten i hele sin lengde, automatisk når snøen passerer avtalt dybde – også de mørkeste morgentimene, slik at veien er åpen før du setter deg i bilen. Brøytestikker settes ut om høsten, og skjæret føres med respekt for grøftekanter og gårdsplassens belegg.',
+      'For husstandene i Kankedal er en fast vinteravtale den forskjellen som gjør at man kan bo landlig uten å være væravhengig. Vi brøyter innkjørselen og den private adkomsten i hele sin lengde, automatisk når snøen passerer avtalt dybde – også de mørkeste morgentimene, slik at veien er åpen før du setter deg i bilen. Brøytestikker bør settes ut om høsten, og skjæret føres med respekt for grøftekanter og gårdsplassens belegg.',
       'Mange her velger å utvide avtalen med strøing av bakkepartier og bortkjøring av snø når vinteren blir lang. Og når våren kommer, tar vi gjerne vårfeiingen også – da forsvinner vinterens strøgrus fra tun og vei i samme slengen.',
     ],
     borettslag: [
@@ -72,7 +72,7 @@ export const kankedal: Omrade = {
     },
     {
       sp: 'Når bør vi i veilaget bestille brøyting for neste vinter?',
-      svar: 'Ta kontakt i september eller oktober. Da rekker vi befaring av veien, avklaring av snødeponi og utsetting av brøytestikker før frosten kommer – og veilaget er sikret plass på rutene fra første snøfall.',
+      svar: 'Ta kontakt i september eller oktober. Da rekker vi befaring av veien, avklaring av snødeponi og anbefaling om utsetting av brøytestikker før frosten kommer – og veilaget er sikret plass på rutene fra første snøfall.',
     },
     {
       sp: 'Kan dere fjerne snø når det ikke er mer plass langs veien?',
