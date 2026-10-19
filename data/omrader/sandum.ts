@@ -34,7 +34,7 @@ export const sandum: Omrade = {
   segmenter: {
     privat: [
       'Bor du i enebolig eller på småbruk på Sandum, er innkjørselen din trolig lengre enn de fleste tenker på som en «innkjørsel». Vår faste brøyteavtale dekker hele strekningen fra hovedveien til garasjen, med automatisk utrykning når snødybden passerer grensen vi har avtalt. Du våkner til åpen vei – uten å ha løftet en skuffe.',
-      'Vi setter brøytestikker langs hele adkomsten om høsten, tilpasser skjærbredden til veien din og strør bakkete partier ved behov. Vil du ha totalpakken, legger vi til bortkjøring av snø ved store mengder og vårfeiing av grus når sesongen er omme.',
+      'Vi anbefaler at brøytestikker settes ut langs hele adkomsten om høsten, tilpasser skjærbredden til veien din og strør bakkete partier ved behov. Vil du ha totalpakken, legger vi til bortkjøring av snø ved store mengder og vårfeiing av grus når sesongen er omme.',
     ],
     borettslag: [
       'I gårdsbygda på Sandum finnes verken borettslag eller sameier i tradisjonell forstand – her er det veilag og nabofellesskap som deler de lange private adkomstveiene. For disse setter vi opp én samlet brøyteavtale for hele veistrekningen: mer effektivt for oss, billigere per husstand for dere, og en garanti for at veien holder samme standard fra ende til annen.',
