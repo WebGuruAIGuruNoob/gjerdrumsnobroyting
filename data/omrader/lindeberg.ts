@@ -34,7 +34,7 @@ export const lindeberg: Omrade = {
   segmenter: {
     privat: [
       'For husstandene på Lindeberg tilbyr vi fast brøyteavtale som fjerner hele vinterusikkerheten: vi følger med på været, rykker ut automatisk når snøfallet passerer avtalt høyde, og innkjørselen er klar før du skal rekke tog eller jobb. Skavler etter vinddrev og brøytekanten fra veibrøytingen tar vi i samme kjøring – du skal aldri måtte spa deg ut på egen hånd.',
-      'Vi merker eiendommen med brøytestikker om høsten og noterer oss detaljene som betyr noe: hvor plenen slutter, hvor steinene ligger, hvor snøen bør lagres for ikke å blokkere sikt eller postkasse. Ønsker du strøing ved hålke, legger vi det inn i samme avtale.',
+      'Vi anbefaler at brøytestikker settes ut ved eiendommen om høsten og noterer oss detaljene som betyr noe: hvor plenen slutter, hvor steinene ligger, hvor snøen bør lagres for ikke å blokkere sikt eller postkasse. Ønsker du strøing ved hålke, legger vi det inn i samme avtale.',
     ],
     borettslag: [
       'På et sted som Lindeberg er det gjerne private fellesveier og små sameier som utgjør fellesskapet – og de faller ofte mellom to stoler: for små for de store driftsaktørene, for store til at én nabo kan ta jobben alene. For oss er de midt i blinken. Vi brøyter hele fellesveien og tilhørende arealer i én operasjon og holder gjesteplasser og snuplasser åpne gjennom vinteren.',
@@ -76,7 +76,7 @@ export const lindeberg: Omrade = {
     },
     {
       sp: 'Når bør jeg tegne avtale for vinteren?',
-      svar: 'Kontakt oss i løpet av høsten, gjerne september–november. Da rekker vi befaring og brøytestikker før snøen kommer, og du er sikret fast plass på ruta. Venter du til første snøfall, hjelper vi deg selvsagt likevel – men de beste betingelsene får de som er tidlig ute.',
+      svar: 'Kontakt oss i løpet av høsten, gjerne september–november. Da rekker vi befaring, og anbefaling om at brøytestikker bør settes ut før snøen kommer, og du er sikret fast plass på ruta. Venter du til første snøfall, hjelper vi deg selvsagt likevel – men de beste betingelsene får de som er tidlig ute.',
     },
   ],
   naboOmrader: ['snobroyting-frogner', 'snobroyting-klofta', 'snobroyting-sorum'],
