@@ -76,7 +76,7 @@ export const lindeberg: Omrade = {
     },
     {
       sp: 'Når bør jeg tegne avtale for vinteren?',
-      svar: 'Kontakt oss i løpet av høsten, gjerne september–november. Da rekker vi befaring, og anbefaling om at brøytestikker bør settes ut før snøen kommer, og du er sikret fast plass på ruta. Venter du til første snøfall, hjelper vi deg selvsagt likevel – men de beste betingelsene får de som er tidlig ute.',
+      svar: 'Kontakt oss i løpet av høsten, gjerne september–november. Da rekker vi befaring og kan anbefale at brøytestikker settes ut før snøen kommer. Du er samtidig sikret fast plass på ruta. Venter du til første snøfall, hjelper vi deg selvsagt likevel – men de beste betingelsene får de som er tidlig ute.',
     },
   ],
   naboOmrader: ['snobroyting-frogner', 'snobroyting-klofta', 'snobroyting-sorum'],
