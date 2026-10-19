@@ -76,7 +76,7 @@ export const sorum: Omrade = {
     },
     {
       sp: 'Når bør jeg bestille brøyteavtale for Sørum?',
-      svar: 'Ta kontakt i løpet av høsten, helst før første snøfall i oktober–november. Da rekker vi å befare innkjørselen, anbefaler at brøytestikker settes ut langs hele strekket og legge deg inn på ruta før vinteren setter inn for alvor.',
+      svar: 'Ta kontakt i løpet av høsten, helst før første snøfall i oktober–november. Da rekker vi å befare innkjørselen og anbefale at brøytestikker settes ut langs hele strekket. Vi kan også legge deg inn på ruta før vinteren setter inn for alvor.',
     },
   ],
   naboOmrader: ['snobroyting-nygard', 'snobroyting-sandum', 'snobroyting-hellen'],
