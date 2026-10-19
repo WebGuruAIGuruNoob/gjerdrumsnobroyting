@@ -34,7 +34,7 @@ export const eltonasen: Omrade = {
   segmenter: {
     privat: [
       'For familiene på Eltonåsen er poenget med en brøyteavtale enkelt: morgenene skal handle om matpakker og skolelevering, ikke om snøskuffe. Vi overvåker været, rykker ut automatisk når snøfallet passerer avtalt høyde, og innkjørselen din er ryddet uten at du har løftet en finger. Med snømengdene her oppe i skogkanten er det en avtale som brukes ofte – og som betaler seg raskt i sparte morgentimer.',
-      'Har du nettopp flyttet inn i ny bolig, kanskje på Eltonåsen Syd? Da hjelper vi deg gjerne med den første brøyteavtalen: vi befarer innkjørselen, gir råd om hvor snøen bør legges på en ny tomt, setter brøytestikker og passer ekstra godt på ny belegningsstein og kantstein den første sesongen.',
+      'Har du nettopp flyttet inn i ny bolig, kanskje på Eltonåsen Syd? Da hjelper vi deg gjerne med den første brøyteavtalen: vi befarer innkjørselen, gir råd om hvor snøen bør legges på en ny tomt, anbefaler at brøytestikker settes ut og passer ekstra godt på ny belegningsstein og kantstein den første sesongen.',
     ],
     borettslag: [
       'Rekkehusfelt og sameier på Eltonåsen har fellesarealer der mange små føtter ferdes: gangveier mot skolen, lekeplasser, gjesteparkering og felles innkjørsler. Vi setter opp en helhetlig vinteravtale med brøyting av kjørearealer, håndrydding av trapper og smale partier, og strøing der barn og voksne går – slik at hele anlegget er trygt fra tidlig morgen.',
@@ -56,7 +56,7 @@ export const eltonasen: Omrade = {
     },
     {
       sp: 'Vi har akkurat kjøpt ny bolig – hvordan kommer vi i gang med brøyteavtale?',
-      svar: 'Ta kontakt, så avtaler vi en kort befaring. Vi ser på innkjørselen, blir enige om utløsningshøyde og hvor snøen skal legges, og setter brøytestikker. På nye tomter er vi ekstra varsomme med fersk belegningsstein og kantstein den første vinteren. Hele prosessen tar noen dager – bestill gjerne før snøen kommer.',
+      svar: 'Ta kontakt, så avtaler vi en kort befaring. Vi ser på innkjørselen, blir enige om utløsningshøyde og hvor snøen skal legges, og anbefaler at brøytestikker settes ut. På nye tomter er vi ekstra varsomme med fersk belegningsstein og kantstein den første vinteren. Hele prosessen tar noen dager – bestill gjerne før snøen kommer.',
     },
     {
       sp: 'Snør det virkelig mer på Eltonåsen enn ellers i området?',
