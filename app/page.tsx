@@ -62,7 +62,7 @@ const forsideFaq = [
   },
   {
     sp: 'Hvordan kommer jeg i gang?',
-    svar: 'Ring 48 42 42 88 eller send SMS med adressen din, så gir vi deg et uforpliktende tilbud. Tegner du avtale før sesongen, rekker vi befaring og utsetting av brøytestikker før første snøfall.',
+    svar: 'Ring 48 42 42 88 eller send SMS med adressen din, så gir vi deg et uforpliktende tilbud. Tegner du avtale før sesongen, rekker vi befaring og anbefaling om at brøytestikker bør settes ut før første snøfall.',
   },
 ]
 
@@ -71,7 +71,7 @@ const segmenter = [
     Ikon: IconPlog,
     tittel: 'Privat',
     tekst:
-      'Fast brøyteavtale for innkjørsel og gårdsplass: ryddet før du skal på jobb, brøytestikker satt ut ved sesongstart og skånsom brøyting som skåner plen og belegningsstein. Legg til strøing hvis du bor i bakke.',
+      'Fast brøyteavtale for innkjørsel og gårdsplass: ryddet før du skal på jobb, brøytestikker bør settes ut ved sesongstart og skånsom brøyting som skåner plen og belegningsstein. Legg til strøing hvis du bor i bakke.',
     href: '/tjenester/snobroyting',
     lenke: 'Snøbrøyting for private',
   },
