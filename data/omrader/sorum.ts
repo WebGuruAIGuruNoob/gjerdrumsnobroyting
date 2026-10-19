@@ -28,7 +28,7 @@ export const sorum: Omrade = {
     tittel: 'Vinter på Sørum: åpne jorder, vind og lange innkjørsler',
     avsnitt: [
       'Det åpne jordbrukslandskapet på Sørum er vakkert, men det gir også vinteren litt ekstra kraft. Uten skog som bremser vinden, driver snøen fritt over jordene og legger seg i harde fonner i avkjørsler og langs tunkanter – ofte lenge etter at selve snøfallet er over. En innkjørsel som var fin om kvelden, kan være tett neste morgen uten at det har falt en eneste ny centimeter. Derfor handler god vinterdrift her like mye om å lese vind og terreng som om å telle centimeter snø.',
-      'De lange innkjørslene er den andre faktoren. Mange hus på Sørum ligger et godt stykke fra veien, og hundre meter innkjørsel er ikke uvanlig. Det er avstander som gjør håndmåking urealistisk og småfresere til en halvdagsjobb – men som maskinene våre tar i én sammenhengende kjøring. Vi setter brøytestikker langs hele strekket ved sesongstart, slik at kantene holder seg der de skal selv når snøen dekker alt.',
+      'De lange innkjørslene er den andre faktoren. Mange hus på Sørum ligger et godt stykke fra veien, og hundre meter innkjørsel er ikke uvanlig. Det er avstander som gjør håndmåking urealistisk og småfresere til en halvdagsjobb – men som maskinene våre tar i én sammenhengende kjøring. Vi anbefaler at brøytestikker bør settes ut langs hele strekket ved sesongstart, slik at kantene holder seg der de skal selv når snøen dekker alt.',
     ],
   },
   segmenter: {
@@ -76,7 +76,7 @@ export const sorum: Omrade = {
     },
     {
       sp: 'Når bør jeg bestille brøyteavtale for Sørum?',
-      svar: 'Ta kontakt i løpet av høsten, helst før første snøfall i oktober–november. Da rekker vi å befare innkjørselen, sette brøytestikker langs hele strekket og legge deg inn på ruta før vinteren setter inn for alvor.',
+      svar: 'Ta kontakt i løpet av høsten, helst før første snøfall i oktober–november. Da rekker vi å befare innkjørselen, sette brøytestikker bør settes ut langs hele strekket og legge deg inn på ruta før vinteren setter inn for alvor.',
     },
   ],
   naboOmrader: ['snobroyting-nygard', 'snobroyting-sandum', 'snobroyting-hellen'],
