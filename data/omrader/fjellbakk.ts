@@ -71,7 +71,7 @@ export const fjellbakk: Omrade = {
     },
     {
       sp: 'Når bør jeg sikre meg brøyteavtale for kommende vinter?',
-      svar: 'Jo før på høsten, jo bedre – helst innen oktober. Da får vi tatt befaring på bar mark, brøytestikker bør settes ut og plassert deg på ruten før første snøfall, i stedet for at du må stille bakerst i køen midt i sesongen.',
+      svar: 'Jo før på høsten, jo bedre – helst innen oktober. Da får vi tatt befaring på bar mark, anbefalt at brøytestikker settes ut og plassert deg på ruten før første snøfall, i stedet for at du må stille bakerst i køen midt i sesongen.',
     },
     {
       sp: 'Hva mer enn brøyting kan dere hjelpe med på Fjellbakk?',
