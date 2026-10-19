@@ -34,7 +34,7 @@ export const heksebergasen: Omrade = {
   },
   segmenter: {
     privat: [
-      'For husstander på Heksebergåsen setter vi opp avtalen rundt det som faktisk er problemet: hellingen. Brøyting med utløsning ved avtalt snøhøyde, kombinert med strøing av innkjørsel og gangareal når det er glatt – automatisk, uten bestilling. Vi merker arealet med brøytestikker om høsten og legger snøen der den gjør minst skade for plen, mur og beplantning.',
+      'For husstander på Heksebergåsen setter vi opp avtalen rundt det som faktisk er problemet: hellingen. Brøyting med utløsning ved avtalt snøhøyde, kombinert med strøing av innkjørsel og gangareal når det er glatt – automatisk, uten bestilling. Vi merker arealet med at brøytestikker bør settes ut om høsten og legger snøen der den gjør minst skade for plen, mur og beplantning.',
       'Familier med skolebarn setter dessuten pris på at vi tar gangarealet frem til døren, ikke bare kjørebanen. Og skulle snøen fra en lang vinter til slutt stjele hele gjesteparkeringen, kjører vi den bort.',
     ],
     borettslag: [
@@ -81,7 +81,7 @@ export const heksebergasen: Omrade = {
     },
     {
       sp: 'Når bør jeg sikre meg brøyteavtale for kommende vinter?',
-      svar: 'Helst før snøen kommer – september til november er ideelt. Da rekker vi befaring, utsetting av brøytestikker og ruteplanlegging, og du er garantert plass. Kapasiteten i åsområdene fylles erfaringsmessig raskt opp.',
+      svar: 'Helst før snøen kommer – september til november er ideelt. Da rekker vi befaring, anbefaling om utsetting av brøytestikker og ruteplanlegging, og du er garantert plass. Kapasiteten i åsområdene fylles erfaringsmessig raskt opp.',
     },
   ],
   naboOmrader: ['snobroyting-frogner', 'snobroyting-skedsmokorset', 'snobroyting-ask'],
