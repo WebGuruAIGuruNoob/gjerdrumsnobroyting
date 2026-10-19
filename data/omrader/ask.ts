@@ -35,7 +35,7 @@ export const ask: Omrade = {
   segmenter: {
     privat: [
       'For deg med enebolig eller rekkehus på Ask er en fast brøyteavtale den enkleste forsikringen mot vinterstress: vi rykker ut automatisk når snøfallet passerer avtalt høyde, og innkjørselen er ryddet før du skal på jobb. Bor du i bakkene rundt sentrum, anbefaler vi kombinert avtale med strøing – det er friksjonen, ikke snømengden, som oftest stopper folk her.',
-      'Vi anbefaler at brøytestikker settes ut ved sesongstart, kjenner hvor plenkanter og belegningsstein ligger, og brøyter skånsomt deretter. Gjesteparkering og plass foran garasjen inngår naturligvis.',
+      'Vi anbefaler at brøytestikker settes ut ved sesongstart. Vi kjenner hvor plenkanter og belegningsstein ligger, og brøyter skånsomt deretter. Gjesteparkering og plass foran garasjen inngår naturligvis.',
     ],
     borettslag: [
       'Borettslagene og sameiene på Ask har fellesarealer med mye ferdsel: gangveier til skole og barnehage, parkeringsplasser og gårdsrom. Vi setter opp en komplett vinteravtale med brøyting, håndrydding og strøing av trapper og smale passasjer – med prioritert adkomst for renovasjon og utrykningskjøretøy.',
@@ -73,7 +73,7 @@ export const ask: Omrade = {
     },
     {
       sp: 'Når bør jeg tegne brøyteavtale for vinteren?',
-      svar: 'Helst i september–november, før første snøfall. Da er du sikret plass på rutene våre, og vi anbefaler at brøytestikker settes ut og gå opp arealet før sesongen.',
+      svar: 'Helst i september–november, før første snøfall. Da er du sikret plass på rutene våre, og vi anbefaler at brøytestikker settes ut, og går gjennom arealet før sesongen.',
     },
     {
       sp: 'Hva skjer ved ekstremvær og store snøfall?',
