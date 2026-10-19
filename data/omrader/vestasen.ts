@@ -76,7 +76,7 @@ export const vestasen: Omrade = {
     },
     {
       sp: 'Når bør familier på Veståsen bestille brøyteavtale?',
-      svar: 'Gjør det i løpet av høsten, gjerne september–oktober. Da rekker vi befaring, og anbefaler at brøytestikker settes ut før snøen kommer, og du unngår ventelisten som gjerne oppstår etter sesongens første store snøfall.',
+      svar: 'Gjør det i løpet av høsten, gjerne september–oktober. Da rekker vi befaring og kan anbefale at brøytestikker settes ut før snøen kommer. Du unngår ventelisten som gjerne oppstår etter sesongens første store snøfall.',
     },
     {
       sp: 'Fjerner dere grusen igjen når vinteren er over?',
