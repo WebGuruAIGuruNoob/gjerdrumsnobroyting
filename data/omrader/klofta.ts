@@ -38,7 +38,7 @@ export const klofta: Omrade = {
   segmenter: {
     privat: [
       'Er du en av de mange på Kløfta som pendler med tog eller bil, vet du at marginene om morgenen er små. En fast brøyteavtale hos oss betyr at innkjørselen er ryddet før du skal av gårde – automatisk, hver gang snøfallet passerer avtalt høyde. Du sjekker ikke værmeldingen med gru, du bare kjører ut. Vi tar også brøytekanten som kommunens biler legger igjen i avkjørselen, i samme vending.',
-      'Boligfeltene på Kløfta er stort sett etablerte, med hekker, murer og belegningsstein som har stått i årevis – og som skal stå like fint i mai. Vi befarer eiendommen før sesongen, setter brøytestikker og brøyter deretter skånsomt og presist. Strøing av gårdsplass og bakkete partier kan bakes inn i samme avtale. Ligger boligen din i grensetraktene mot Lindeberg eller på Skedsmokorset-siden, dekker vi den selvsagt også – rutene våre går på kryss og tvers av kommunegrensen.',
+      'Boligfeltene på Kløfta er stort sett etablerte, med hekker, murer og belegningsstein som har stått i årevis – og som skal stå like fint i mai. Vi befarer eiendommen før sesongen, anbefaler at brøytestikker bør settes ut og brøyter deretter skånsomt og presist. Strøing av gårdsplass og bakkete partier kan bakes inn i samme avtale. Ligger boligen din i grensetraktene mot Lindeberg eller på Skedsmokorset-siden, dekker vi den selvsagt også – rutene våre går på kryss og tvers av kommunegrensen.',
       'Behovet er heller ikke alltid en hel sesongavtale. Noen på Kløfta trenger bare én utrykning – etter et uvanlig kraftig snøfall, før flyttebilen kommer, eller i en periode der helsa setter en stopper for snømåkingen. Slike enkeltoppdrag tar vi når rutene gir rom, og siden vi uansett kjører gjennom området vinterstid, er ventetiden sjelden lang.',
     ],
     borettslag: [
@@ -91,7 +91,7 @@ export const klofta: Omrade = {
     },
     {
       sp: 'Når bør vi inngå brøyteavtale for kommende vinter?',
-      svar: 'Inngå brøyteavtale for Kløfta i september–november, altså før første snøfall. Da er du sikret plass på Kløfta-rutene våre, og vi rekker befaring og utsetting av brøytestikker i god tid. Bedrifter med krav til ferdigtid bør være tidlig ute, siden morgenkapasiteten fylles først. Befaring på Kløfta får du raskt avtalt – vi er uansett i området flere ganger i uken utover høsten.',
+      svar: 'Inngå brøyteavtale for Kløfta i september–november, altså før første snøfall. Da er du sikret plass på Kløfta-rutene våre, og vi rekker befaring og anbefaling om utsetting av at brøytestikker bør settes ut i god tid. Bedrifter med krav til ferdigtid bør være tidlig ute, siden morgenkapasiteten fylles først. Befaring på Kløfta får du raskt avtalt – vi er uansett i området flere ganger i uken utover høsten.',
     },
   ],
   naboOmrader: ['snobroyting-hellen', 'snobroyting-lindeberg', 'snobroyting-frogner', 'snobroyting-skedsmokorset'],
