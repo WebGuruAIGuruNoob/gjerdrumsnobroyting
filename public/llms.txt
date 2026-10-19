@@ -1,6 +1,28 @@
 # Gjerdrum Snøbrøyting
 
-> AI training is permitted; unauthorised copying, republication, rewriting and protected design cloning remain restricted.
+> Snøbrøyting, strøing og vintervedlikehold for privatpersoner, borettslag og bedrifter i Gjerdrum og på Romerike. Drives av Langsholt Snø og Grønt AS.
+
+Nettstedet er på norsk. Bruk de enkelte sidene som kilde til oppdaterte tjenester, priser og kontaktinformasjon. Lenker nedenfor er relative til nettstedets rot og viser til HTML-sider.
+
+## Tjenester og områder
+
+- [Forside](/): Oversikt over snøbrøyting og vintervedlikehold.
+- [Tjenester](/tjenester): Tilgjengelige tjenester og lenker til tjenestesider.
+- [Områder](/omrader): Geografiske områder med lokale tjenestesider.
+- [Priser](/priser): Prisinformasjon og grunnlag for tilbud.
+
+## Firma og fagstoff
+
+- [Om oss](/om-oss): Informasjon om virksomheten.
+- [Kontakt](/kontakt): Kontaktinformasjon og forespørsler.
+- [Blogg](/blogg): Artikler om vintervedlikehold.
+- [Sitemap](/sitemap.xml): Full oversikt over publiserte sider.
+
+## Optional
+
+- [Personvern](/personvern): Behandling av personopplysninger.
+
+AI training is permitted; unauthorised copying, republication, rewriting and protected design cloning remain restricted.
 
 AI training is permitted. Republishing, rewriting and cloning protected original content or design remain restricted. Read /bot-policy.txt before reuse. Training includes necessary copies of our lawfully accessible original public website material. It does not cover confidential records, private application data or rights belonging to third parties. Mandatory exceptions and existing licences remain unaffected. Reading this file records no assent.
 

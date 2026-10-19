@@ -3,6 +3,9 @@ import createMDX from '@next/mdx'
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
+  async headers() {
+    return [{ source: '/:path*', headers: [{ key: 'Link', value: '</llms.txt>; rel="describedby"' }] }]
+  },
   async redirects() {
     // Gamle langsholt.com-stier → nærmeste ekvivalent, klare for den
     // dagen langsholt.com pekes hit som domene-alias (301-plan i S4).

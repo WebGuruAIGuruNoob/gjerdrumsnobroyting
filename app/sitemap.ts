@@ -12,7 +12,7 @@ import { blogginnlegg } from '@/data/blogg'
 const INNHOLD_OPPDATERT = new Date('2026-08-21')
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const statiske = ['', '/tjenester', '/omrader', '/priser', '/om-oss', '/kontakt', '/blogg', '/personvern'].map(
+  const statiske = ['', '/tjenester', '/omrader', '/priser', '/om-oss', '/kontakt', '/blogg', '/personvern', '/takk'].map(
     (path) => ({
       url: `${site.url}${path}`,
       lastModified: INNHOLD_OPPDATERT,

@@ -5,7 +5,7 @@ import { RingButton } from '@/components/CTAButtons'
 export const metadata: Metadata = {
   title: 'Takk for henvendelsen!',
   description: 'Vi har mottatt forespørselen din og kontakter deg innen 24 timer.',
-  robots: { index: false, follow: true },
+  robots: { index: true, follow: true },
 }
 
 export default function TakkSide() {
